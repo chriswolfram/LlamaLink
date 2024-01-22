@@ -1,0 +1,1162 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     55464,       1154]
+NotebookOptionsPosition[     51285,       1078]
+NotebookOutlinePosition[     51682,       1094]
+CellTagsIndexPosition[     51639,       1091]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Initialization", "Section",
+ CellChangeTimes->{{3.914952782548452*^9, 
+  3.914952784082762*^9}},ExpressionUUID->"185f86b6-bf9a-41a4-bf67-\
+3f8f93607d7e"],
+
+Cell["Load the paclet:", "Text",
+ CellChangeTimes->{{3.9149527865857964`*^9, 
+  3.914952788723888*^9}},ExpressionUUID->"17445dc0-c856-41da-9527-\
+3d115561b6a7"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"PacletDirectoryLoad", "[", 
+   RowBox[{"ParentDirectory", "@", 
+    RowBox[{"NotebookDirectory", "[", "]"}]}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.914897850253681*^9, 3.9148978613340473`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"1096925a-7eda-47f6-b9b2-a3f2e72d96b5"],
+
+Cell["Check that the paclet is loaded:", "Text",
+ CellChangeTimes->{{3.9149527904433737`*^9, 
+  3.9149527937386637`*^9}},ExpressionUUID->"21384ef4-4c54-460a-9523-\
+3a90b92feb31"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PacletObject", "[", "\"\<ChristopherWolfram/LlamaLink\>\"", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.914897862254663*^9, 3.9148978813908777`*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"4a7fc582-387c-4be2-b274-5d2f9d206315"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["PacletObject",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{
+              Thickness[0.0416667], {
+               FaceForm[{
+                 RGBColor[0.961, 0.961, 0.961], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{12.5454, 
+                22.5972}, {7.5464, 20.5002}, {2.5454, 18.4022}, {2.5454, 
+                12.5982}, {2.5454, 12.5972}, {2.5454, 6.7952}, {7.5454, 
+                4.6962}, {7.546, 4.6972}, {12.5454, 2.5992}, {17.5454, 
+                4.6972}, {17.5454, 4.6962}, {22.5454, 6.7952}, {22.5454, 
+                12.5972}, {22.5454, 12.5982}, {22.5454, 18.4022}}}]}, {
+               FaceForm[{
+                 RGBColor[0.898, 0.898, 0.898], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}}}, {{{17.125, 8.3359}, {17.125, 
+                14.0569}, {16.875, 14.0569}, {16.875, 8.3359}, {17., 
+                8.1169}, {21.952, 6.0399}, {22.049, 6.2709}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}}}, {{{7.125, 8.3359}, {7.125, 14.0569}, {
+                6.875, 14.0569}, {6.875, 8.3359}, {1.952, 6.2709}, {2.048, 
+                6.0399}, {7., 8.1169}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}}}, {{{11.8745, 6.2383}, {6.9515, 4.1733}, {7.0475, 
+                3.9423}, {11.9995, 6.0193}, {16.9515, 3.9423}, {17.0475, 
+                4.1733}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}}}, {{{17.125, 14.1392}, {17.125, 
+                19.8602}, {16.875, 19.8602}, {16.875, 14.1392}, {17., 
+                13.9202}, {21.952, 11.8432}, {22.049, 12.0742}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}}}, {{{7.125, 14.1392}, {7.125, 19.8602}, {
+                6.875, 19.8602}, {6.875, 14.1392}, {1.952, 12.0742}, {2.048, 
+                11.8432}, {7., 13.9202}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}}}, {{{11.8746, 21.3633}, {11.8746, 18.3563}, {
+                11.9996, 18.3033}, {12.1246, 18.3563}, {12.1246, 21.3633}, {
+                11.9996, 21.4153}}}]}, {
+               FaceForm[{
+                 RGBColor[0.749, 0.749, 0.749], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 
+                 3}}}, {{{8.292, 19.8594}, {12., 21.4154}, {15.707, 
+                 19.8594}, {12., 18.3034}}, {{17.5, 19.5274}, {17.5, 
+                 20.1924}, {12., 22.5004}, {6.5, 20.1924}, {6.5, 19.5284}, {
+                 12., 17.2194}, {12., 17.2194}, {15.7, 18.7724}, {17.5, 
+                 19.5274}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}}}, {{{11.5, 8.5156}, {11.5, 6.4876}, {11.5, 
+                5.4026}, {12.5, 5.8226}, {12.5, 8.5156}, {12., 8.3056}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                 0}, {0, 1, 0}}}, {{{21.5, 6.4873}, {17.5, 4.8083}, {17.5, 
+                 9.5283}, {21.5, 11.2073}}, {{21.5, 12.7113}, {21.5, 
+                 12.2913}, {17., 10.4033}, {16.5, 10.6133}, {16.5, 10.1943}, {
+                 15.707, 9.8613}, {16.5, 9.5283}, {16.5, 4.8083}, {16.5, 
+                 4.8093}, {16.5, 4.3903}, {15.707, 4.0573}, {17., 3.5143}, {
+                 22.5, 5.8223}, {22.5, 12.2913}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                 0}, {0, 1, 0}}}, {{{6.5, 4.8086}, {2.5, 6.4876}, {2.5, 
+                 11.2066}, {6.5, 9.5286}}, {{7.5, 9.1096}, {7.5, 9.1096}, {
+                 7.5, 9.5286}, {8.292, 9.8616}, {7.5, 10.1936}, {7.5, 
+                 10.6136}, {7., 10.4036}, {2.5, 12.2906}, {2.5, 12.7106}, {
+                 1.5, 12.2916}, {1.5, 5.8226}, {7., 3.5146}, {8.293, 
+                 4.0576}, {7.5, 4.3906}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}}}, {{{3.2925, 17.7622}, {7.0005, 
+                 19.3182}, {10.7075, 17.7622}, {7.0005, 16.2062}}, {{6.5005, 
+                 10.6122}, {2.5005, 12.2912}, {2.5005, 17.0102}, {6.5005, 
+                 15.3322}}, {{7.5005, 10.1932}, {7.5005, 10.6122}, {7.5005, 
+                 15.3322}, {12.0005, 17.2202}, {12.5005, 17.0102}, {12.5005, 
+                 18.0952}, {7.0005, 20.4032}, {1.5005, 18.0952}, {1.5005, 
+                 11.6262}, {7.0005, 9.3182}, {8.2935, 9.8612}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}}}, {{{21.5, 12.291}, {17.5, 10.612}, {
+                 17.5, 15.332}, {21.5, 17.01}}, {{13.293, 17.762}, {17., 
+                 19.318}, {20.708, 17.762}, {17., 16.207}}, {{17., 20.403}, {
+                 11.5, 18.095}, {11.5, 17.01}, {12., 17.22}, {16.5, 15.332}, {
+                 16.5, 10.612}, {16.5, 10.194}, {15.706, 9.861}, {17., 
+                 9.318}, {22.5, 11.626}, {22.5, 18.095}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}}}, {{{16.4995, 4.3906}, {12.4995, 
+                 2.7116}, {12.4995, 7.4316}, {16.4995, 9.1096}}, {{11.4995, 
+                 2.7116}, {7.4995, 4.3906}, {7.4995, 9.1096}, {11.4995, 
+                 7.4316}}, {{16.4995, 10.6136}, {16.4995, 10.1946}, {11.9995, 
+                 8.3056}, {8.2915, 9.8616}, {7.4995, 10.1936}, {7.4995, 
+                 10.6146}, {6.4995, 10.1946}, {6.4995, 3.7256}, {11.9995, 
+                 1.4176}, {17.4995, 3.7256}, {17.4995, 10.1946}}}]}, {
+               FaceForm[{
+                 RGBColor[0.965, 0.765, 0.749], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}}}, {{{12., 17.6616}, {16.945, 15.5856}, {16.945, 
+                9.9376}, {12., 7.8636}, {7.055, 9.9376}, {7.055, 
+                15.5856}}}]}, {
+               FaceForm[{
+                 RGBColor[0.91, 0.655, 0.635], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{12.125, 
+                17.7627}, {11.875, 17.7627}, {11.875, 12.0407}, {6.952, 
+                9.9757}, {7.048, 9.7447}, {12., 11.8227}, {16.952, 9.7447}, {
+                17.048, 9.9757}, {12.125, 12.0407}}}]}, {
+               FaceForm[{
+                 RGBColor[0.867, 0.067, 0.], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                 0}}}, {{{12.5, 8.5146}, {12.5, 13.2336}, {16.5, 14.9116}, {
+                 16.5, 10.1926}}, {{7.5, 14.9116}, {11.5, 13.2336}, {11.5, 
+                 8.5146}, {7.5, 10.1926}}, {{15.708, 15.6636}, {12., 
+                 14.1086}, {8.292, 15.6636}, {12., 17.2206}}, {{12., 
+                 18.3046}, {6.5, 15.9956}, {6.5, 9.5286}, {12., 7.2206}, {
+                 17.5, 9.5286}, {17.5, 15.9956}}}]}}, AspectRatio -> 
+             Automatic, ImageSize -> {24., 24.}, 
+             PlotRange -> {{0., 24.}, {0., 24.}}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                 "\"ChristopherWolfram/LlamaLink\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Version: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"1.0.0\"", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{
+              Thickness[0.0416667], {
+               FaceForm[{
+                 RGBColor[0.961, 0.961, 0.961], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{12.5454, 
+                22.5972}, {7.5464, 20.5002}, {2.5454, 18.4022}, {2.5454, 
+                12.5982}, {2.5454, 12.5972}, {2.5454, 6.7952}, {7.5454, 
+                4.6962}, {7.546, 4.6972}, {12.5454, 2.5992}, {17.5454, 
+                4.6972}, {17.5454, 4.6962}, {22.5454, 6.7952}, {22.5454, 
+                12.5972}, {22.5454, 12.5982}, {22.5454, 18.4022}}}]}, {
+               FaceForm[{
+                 RGBColor[0.898, 0.898, 0.898], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}}}, {{{17.125, 8.3359}, {17.125, 
+                14.0569}, {16.875, 14.0569}, {16.875, 8.3359}, {17., 
+                8.1169}, {21.952, 6.0399}, {22.049, 6.2709}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}}}, {{{7.125, 8.3359}, {7.125, 14.0569}, {
+                6.875, 14.0569}, {6.875, 8.3359}, {1.952, 6.2709}, {2.048, 
+                6.0399}, {7., 8.1169}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}}}, {{{11.8745, 6.2383}, {6.9515, 4.1733}, {7.0475, 
+                3.9423}, {11.9995, 6.0193}, {16.9515, 3.9423}, {17.0475, 
+                4.1733}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}}}, {{{17.125, 14.1392}, {17.125, 
+                19.8602}, {16.875, 19.8602}, {16.875, 14.1392}, {17., 
+                13.9202}, {21.952, 11.8432}, {22.049, 12.0742}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}}}, {{{7.125, 14.1392}, {7.125, 19.8602}, {
+                6.875, 19.8602}, {6.875, 14.1392}, {1.952, 12.0742}, {2.048, 
+                11.8432}, {7., 13.9202}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}}}, {{{11.8746, 21.3633}, {11.8746, 18.3563}, {
+                11.9996, 18.3033}, {12.1246, 18.3563}, {12.1246, 21.3633}, {
+                11.9996, 21.4153}}}]}, {
+               FaceForm[{
+                 RGBColor[0.749, 0.749, 0.749], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 
+                 3}}}, {{{8.292, 19.8594}, {12., 21.4154}, {15.707, 
+                 19.8594}, {12., 18.3034}}, {{17.5, 19.5274}, {17.5, 
+                 20.1924}, {12., 22.5004}, {6.5, 20.1924}, {6.5, 19.5284}, {
+                 12., 17.2194}, {12., 17.2194}, {15.7, 18.7724}, {17.5, 
+                 19.5274}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}}}, {{{11.5, 8.5156}, {11.5, 6.4876}, {11.5, 
+                5.4026}, {12.5, 5.8226}, {12.5, 8.5156}, {12., 8.3056}}}], 
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                 0}, {0, 1, 0}}}, {{{21.5, 6.4873}, {17.5, 4.8083}, {17.5, 
+                 9.5283}, {21.5, 11.2073}}, {{21.5, 12.7113}, {21.5, 
+                 12.2913}, {17., 10.4033}, {16.5, 10.6133}, {16.5, 10.1943}, {
+                 15.707, 9.8613}, {16.5, 9.5283}, {16.5, 4.8083}, {16.5, 
+                 4.8093}, {16.5, 4.3903}, {15.707, 4.0573}, {17., 3.5143}, {
+                 22.5, 5.8223}, {22.5, 12.2913}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                 0}, {0, 1, 0}}}, {{{6.5, 4.8086}, {2.5, 6.4876}, {2.5, 
+                 11.2066}, {6.5, 9.5286}}, {{7.5, 9.1096}, {7.5, 9.1096}, {
+                 7.5, 9.5286}, {8.292, 9.8616}, {7.5, 10.1936}, {7.5, 
+                 10.6136}, {7., 10.4036}, {2.5, 12.2906}, {2.5, 12.7106}, {
+                 1.5, 12.2916}, {1.5, 5.8226}, {7., 3.5146}, {8.293, 
+                 4.0576}, {7.5, 4.3906}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}}}, {{{3.2925, 17.7622}, {7.0005, 
+                 19.3182}, {10.7075, 17.7622}, {7.0005, 16.2062}}, {{6.5005, 
+                 10.6122}, {2.5005, 12.2912}, {2.5005, 17.0102}, {6.5005, 
+                 15.3322}}, {{7.5005, 10.1932}, {7.5005, 10.6122}, {7.5005, 
+                 15.3322}, {12.0005, 17.2202}, {12.5005, 17.0102}, {12.5005, 
+                 18.0952}, {7.0005, 20.4032}, {1.5005, 18.0952}, {1.5005, 
+                 11.6262}, {7.0005, 9.3182}, {8.2935, 9.8612}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}}}, {{{21.5, 12.291}, {17.5, 10.612}, {
+                 17.5, 15.332}, {21.5, 17.01}}, {{13.293, 17.762}, {17., 
+                 19.318}, {20.708, 17.762}, {17., 16.207}}, {{17., 20.403}, {
+                 11.5, 18.095}, {11.5, 17.01}, {12., 17.22}, {16.5, 15.332}, {
+                 16.5, 10.612}, {16.5, 10.194}, {15.706, 9.861}, {17., 
+                 9.318}, {22.5, 11.626}, {22.5, 18.095}}}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                 0, 1, 0}, {0, 1, 0}}}, {{{16.4995, 4.3906}, {12.4995, 
+                 2.7116}, {12.4995, 7.4316}, {16.4995, 9.1096}}, {{11.4995, 
+                 2.7116}, {7.4995, 4.3906}, {7.4995, 9.1096}, {11.4995, 
+                 7.4316}}, {{16.4995, 10.6136}, {16.4995, 10.1946}, {11.9995, 
+                 8.3056}, {8.2915, 9.8616}, {7.4995, 10.1936}, {7.4995, 
+                 10.6146}, {6.4995, 10.1946}, {6.4995, 3.7256}, {11.9995, 
+                 1.4176}, {17.4995, 3.7256}, {17.4995, 10.1946}}}]}, {
+               FaceForm[{
+                 RGBColor[0.965, 0.765, 0.749], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}}}, {{{12., 17.6616}, {16.945, 15.5856}, {16.945, 
+                9.9376}, {12., 7.8636}, {7.055, 9.9376}, {7.055, 
+                15.5856}}}]}, {
+               FaceForm[{
+                 RGBColor[0.91, 0.655, 0.635], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {
+                0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{12.125, 
+                17.7627}, {11.875, 17.7627}, {11.875, 12.0407}, {6.952, 
+                9.9757}, {7.048, 9.7447}, {12., 11.8227}, {16.952, 9.7447}, {
+                17.048, 9.9757}, {12.125, 12.0407}}}]}, {
+               FaceForm[{
+                 RGBColor[0.867, 0.067, 0.], 
+                 Opacity[1.]}], 
+               
+               FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 
+                 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                 0}}}, {{{12.5, 8.5146}, {12.5, 13.2336}, {16.5, 14.9116}, {
+                 16.5, 10.1926}}, {{7.5, 14.9116}, {11.5, 13.2336}, {11.5, 
+                 8.5146}, {7.5, 10.1926}}, {{15.708, 15.6636}, {12., 
+                 14.1086}, {8.292, 15.6636}, {12., 17.2206}}, {{12., 
+                 18.3046}, {6.5, 15.9956}, {6.5, 9.5286}, {12., 7.2206}, {
+                 17.5, 9.5286}, {17.5, 15.9956}}}]}}, AspectRatio -> 
+             Automatic, ImageSize -> {24., 24.}, 
+             PlotRange -> {{0., 24.}, {0., 24.}}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Name: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                 "\"ChristopherWolfram/LlamaLink\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Version: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"1.0.0\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Location: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                 "\"/Users/christopher/git/LlamaLink\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Description: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox["\"One-line description of the paclet\"", Short], 
+                  "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  PacletObject[<|
+   "Name" -> "ChristopherWolfram/LlamaLink", "Description" -> 
+    "One-line description of the paclet", "Creator" -> "Christopher Wolfram", 
+    "Version" -> "1.0.0", "WolframVersion" -> "14+", "PublisherID" -> 
+    "ChristopherWolfram", "License" -> "MIT", "PrimaryContext" -> 
+    "ChristopherWolfram`LlamaLink`", "DocumentationURL" -> 
+    "https://resources.wolframcloud.com/PacletRepository/resources", 
+    "Extensions" -> {{
+      "Kernel", "Root" -> "Kernel", 
+       "Context" -> {"ChristopherWolfram`LlamaLink`"}}, {
+      "Documentation", "Root" -> "Documentation", "Language" -> "English"}}, 
+    "Location" -> "/Users/christopher/git/LlamaLink"|>],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{{3.9148978672607203`*^9, 3.914897881648541*^9}, {
+   3.9148993829338617`*^9, 3.914899402996813*^9}, 3.9148994427872887`*^9, 
+   3.914899491419063*^9, 3.914899574269148*^9, 3.9148996195928383`*^9, 
+   3.9148997017012987`*^9, 3.914899838349832*^9, {3.9149002612870073`*^9, 
+   3.914900287103238*^9}, 3.914900408303787*^9, 3.91490120103924*^9, 
+   3.914901236317236*^9, 3.914901271149416*^9, 3.914901302388612*^9, {
+   3.9149013377980337`*^9, 3.914901382775219*^9}, {3.9149027587830544`*^9, 
+   3.9149028124245243`*^9}, {3.914903130079968*^9, 3.914903175018915*^9}, 
+   3.914903218459729*^9, {3.91490346615273*^9, 3.914903484369886*^9}, 
+   3.914903557833712*^9, 3.9149036209868183`*^9, {3.914903677322935*^9, 
+   3.9149037062716637`*^9}, 3.9149038079088078`*^9, {3.914903844789468*^9, 
+   3.914903873073945*^9}, 3.9149360184097443`*^9, 3.914936179312454*^9, 
+   3.9149362310307302`*^9, {3.9149363009330482`*^9, 3.914936345516012*^9}, 
+   3.914936391013956*^9, 3.9149376119454317`*^9, 3.9149377304894247`*^9, 
+   3.914937875145872*^9, 3.914937958059325*^9, 3.914941847542453*^9, 
+   3.9149418780997477`*^9, 3.914941925566675*^9, 3.914941963878931*^9, 
+   3.914942751094211*^9, 3.91494280999866*^9, 3.9149438399458*^9, 
+   3.914944131829873*^9, {3.914947895805583*^9, 3.914947924819688*^9}, 
+   3.914948103535178*^9, 3.914948943428483*^9, 3.914949073471408*^9, 
+   3.914949714411854*^9, 3.914950026610154*^9, 3.914950083080023*^9, 
+   3.9149501829178047`*^9, 3.914950889335761*^9, 3.9149509695203323`*^9, {
+   3.914951012543254*^9, 3.9149510411786833`*^9}, 3.914951071727274*^9, 
+   3.914951429978739*^9, 3.91495146193886*^9, 3.914952302657905*^9, 
+   3.914952358051466*^9, 3.914952449745552*^9, 3.914952534562714*^9, 
+   3.91495272526871*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"1e180156-048a-43b1-af5a-a4211072e212"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Run ",
+ StyleBox["Needs", "Input"],
+ ":"
+}], "Text",
+ CellChangeTimes->{{3.914952798252205*^9, 
+  3.9149528012292347`*^9}},ExpressionUUID->"a529cf23-8994-4614-b1b7-\
+7f288de4309f"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<ChristopherWolfram`LlamaLink`\>\"", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.914897885065621*^9, 3.914897891149694*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"e702f40d-26be-4238-a0ce-b8f2e8cb4c28"],
+
+Cell["\<\
+Modify the install path as needed. (Currently, the install path is hard-coded \
+to something random, so you will need to set this.)\
+\>", "Text",
+ CellChangeTimes->{{3.9149528050677147`*^9, 
+  3.914952847491115*^9}},ExpressionUUID->"4f3929a4-3a59-449d-ad58-\
+3065dfb8aa46"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["$LlamaInstallPath"], "Input",
+ CellChangeTimes->{{3.914897893004274*^9, 3.914897895174815*^9}, {
+  3.91489940521821*^9, 3.914899406556005*^9}, {3.914952811644061*^9, 
+  3.9149528169142017`*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"cb085bb3-abb9-4345-8d65-1f1fcb392b24"],
+
+Cell[BoxData["\<\"/Users/christopher/git/LlamaLink/llama.cpp/build/install\"\>\
+"], "Output",
+ CellChangeTimes->{
+  3.914897895385655*^9, 3.914899406899589*^9, {3.91489946853526*^9, 
+   3.914899491598404*^9}, 3.914899574458275*^9, 3.914899619780828*^9, 
+   3.914899701875684*^9, 3.914899838529072*^9, {3.914900261481558*^9, 
+   3.914900287277533*^9}, 3.914900408496337*^9, 3.914901201221487*^9, 
+   3.9149012364932213`*^9, 3.914901271343833*^9, 3.9149013025750027`*^9, {
+   3.914901337972143*^9, 3.9149013829638844`*^9}, {3.914902758975155*^9, 
+   3.914902812613511*^9}, {3.914903130266099*^9, 3.914903175204423*^9}, 
+   3.91490321864314*^9, {3.91490346634455*^9, 3.914903484564117*^9}, 
+   3.914903558016139*^9, 3.914903621170051*^9, {3.914903677524378*^9, 
+   3.914903706470441*^9}, 3.9149038081134453`*^9, {3.9149038449786367`*^9, 
+   3.914903873261689*^9}, 3.914936018596998*^9, 3.9149361794870996`*^9, 
+   3.914936231210835*^9, {3.914936301108083*^9, 3.9149363457176943`*^9}, 
+   3.914936391195891*^9, 3.91493761212206*^9, 3.914937730682013*^9, 
+   3.914937875355308*^9, 3.9149379582549067`*^9, 3.914941847722929*^9, 
+   3.91494187830225*^9, 3.914941925757244*^9, 3.9149419640605593`*^9, 
+   3.914942751414227*^9, 3.914942810272691*^9, 3.914943840237907*^9, 
+   3.9149441327571793`*^9, {3.914947896090582*^9, 3.914947925113276*^9}, 
+   3.914948943736676*^9, 3.914949073736465*^9, 3.914949714684058*^9, 
+   3.914950028138567*^9, 3.9149500833714657`*^9, 3.914950183194757*^9, 
+   3.9149509698146048`*^9, {3.914951012824809*^9, 3.91495104145181*^9}, 
+   3.914951072008347*^9, 3.914951430256484*^9, 3.914951462220543*^9, 
+   3.914952302940139*^9, 3.9149523583269463`*^9, 3.914952450042083*^9, 
+   3.914952534845243*^9, 3.914952725551689*^9, 3.914952817126099*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"2789d6e8-b489-4972-b61e-cd7cdfd6fa1d"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"$LlamaInstallPath", "=", "\"\<...\>\""}], "*)"}]], "Input",
+ CellChangeTimes->{{3.914952849626678*^9, 
+  3.9149528545094833`*^9}},ExpressionUUID->"384c0c0b-8663-46b7-ace2-\
+f3e8dc424ba3"],
+
+Cell["Initialize the library:", "Text",
+ CellChangeTimes->{{3.914952858086377*^9, 
+  3.9149528630182*^9}},ExpressionUUID->"26931dad-d77e-49b8-ae4e-651cfab14e38"],
+
+Cell[BoxData[
+ RowBox[{"InitializeLlama", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.914899469341132*^9, 3.914899472431858*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"f6ea2fa1-a110-4d23-a0cf-4b75113dce28"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["High-level interface", "Section",
+ CellChangeTimes->{{3.9149528715934677`*^9, 
+  3.9149528865539503`*^9}},ExpressionUUID->"61c82764-3ef9-4c02-ad7b-\
+fabb1a681056"],
+
+Cell[CellGroupData[{
+
+Cell["Generation", "Subsection",
+ CellChangeTimes->{{3.91495304105261*^9, 
+  3.914953041897382*^9}},ExpressionUUID->"c2cba284-ee18-42e7-9ec2-\
+5a85e22fa4e6"],
+
+Cell["Load a compatible model from a file:", "Text",
+ CellChangeTimes->{{3.914952890633601*^9, 
+  3.914952898044755*^9}},ExpressionUUID->"b6e9afb8-5b8b-44a2-9176-\
+4f46c466f377"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"llama", "=", 
+   RowBox[{
+   "LlamaObjectCreate", "[", 
+    "\"\</Users/christopher/git/LlamaLink/llama-2-7b.Q4_K_M.gguf\>\"", 
+    "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.914944134555101*^9, 3.9149441463266077`*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"d0dd16d8-4902-4da5-aca4-2a2a96d308e0"],
+
+Cell["Generate completions:", "Text",
+ CellChangeTimes->{{3.91495291002203*^9, 
+  3.9149529141544237`*^9}},ExpressionUUID->"628b8804-eefd-4826-9e64-\
+5ee1a8c72196"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"LlamaGenerate", "[", 
+  RowBox[{"llama", ",", "\"\<Once upon a time\>\"", ",", 
+   RowBox[{"\"\<MaxTokens\>\"", "->", "10"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.914952903523635*^9, 3.91495298161525*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"3ad54c00-3842-4567-86d1-234609cd1ce7"],
+
+Cell[BoxData["\<\", there was a man who lived in a hot\"\>"], "Output",
+ CellChangeTimes->{{3.914952936257167*^9, 3.914952999421338*^9}},
+ CellLabel->"Out[18]=",ExpressionUUID->"11b764c8-b3b6-4efc-9319-de0fa79bc2a7"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Use ",
+ StyleBox["HandlerFunctions", "Input"],
+ " to view progress:"
+}], "Text",
+ CellChangeTimes->{{3.914953007596492*^9, 
+  3.914953015911565*^9}},ExpressionUUID->"1db9428e-553e-47be-b64d-\
+b0d5c28ab70f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"tokens", "=", 
+   RowBox[{"LlamaTokenize", "[", 
+    RowBox[{"llama", ",", "\"\<Once upon a time\>\""}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Monitor", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"LlamaGenerate", "[", 
+     RowBox[{"llama", ",", "tokens", ",", 
+      RowBox[{"\"\<MaxTokens\>\"", "->", "10"}], ",", 
+      RowBox[{"HandlerFunctions", "->", 
+       RowBox[{"<|", 
+        RowBox[{"\"\<NewToken\>\"", "->", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"AppendTo", "[", 
+            RowBox[{"tokens", ",", "#"}], "]"}], "&"}], ")"}]}], "|>"}]}]}], 
+     "]"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"LlamaDetokenize", "[", 
+     RowBox[{"llama", ",", "tokens"}], "]"}]}], "\[IndentingNewLine]", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"LlamaDetokenize", "[", 
+  RowBox[{"llama", ",", "tokens"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.9149530193326797`*^9, 3.914953090423176*^9}},
+ CellLabel->"In[22]:=",ExpressionUUID->"2acb33f2-045b-4f9e-b1f4-3b8e6d624064"],
+
+Cell[BoxData["\<\" Once upon a time, there was a fairy, and his name\"\>"], \
+"Output",
+ CellChangeTimes->{{3.914953087292776*^9, 3.914953092988542*^9}},
+ CellLabel->"Out[24]=",ExpressionUUID->"c32565f1-8086-40a5-a942-2f54acad478f"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tokenization", "Subsection",
+ CellChangeTimes->{{3.914953101815234*^9, 
+  3.91495310294079*^9}},ExpressionUUID->"eeb2629f-b1f7-42dc-800f-\
+0490f6b19cfc"],
+
+Cell["Tokenize strings:", "Text",
+ CellChangeTimes->{{3.914953121304124*^9, 
+  3.9149531235202293`*^9}},ExpressionUUID->"0b24a1e2-765b-4850-b6bd-\
+7360d5fdb952"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"LlamaTokenize", "[", 
+  RowBox[{"llama", ",", "\"\<Hello there! This is a test!\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.914953110656323*^9, 3.914953119598284*^9}},
+ CellLabel->"In[25]:=",ExpressionUUID->"5b014e7e-f7da-4338-8575-6c5b8b8bad49"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "15043", ",", "727", ",", "29991", ",", "910", ",", "338", ",", 
+   "263", ",", "1243", ",", "29991"}], "}"}]], "Output",
+ CellChangeTimes->{3.914953119841443*^9},
+ CellLabel->"Out[25]=",ExpressionUUID->"2e8e1dc3-c487-42da-9198-7a2b5eca5fd3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"LlamaTokenize", "[", 
+  RowBox[{"llama", ",", "\"\<Hello there! This is a test!\>\"", ",", 
+   RowBox[{"\"\<IncludeStartOfStringToken\>\"", "->", "False"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.9149531285676823`*^9, 3.914953134212524*^9}},
+ CellLabel->"In[26]:=",ExpressionUUID->"25f74c1e-be86-4330-99d0-e1c7652e29f2"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "15043", ",", "727", ",", "29991", ",", "910", ",", "338", ",", "263", ",", 
+   "1243", ",", "29991"}], "}"}]], "Output",
+ CellChangeTimes->{3.914953134380765*^9},
+ CellLabel->"Out[26]=",ExpressionUUID->"c5e2dab7-79a6-4ef1-82bb-3b6e3c2f2e21"]
+}, Open  ]],
+
+Cell["View how tokenization splits a longer text:", "Text",
+ CellChangeTimes->{{3.91495313979687*^9, 
+  3.914953145593927*^9}},ExpressionUUID->"79af7120-2c83-4963-a6e8-\
+5764a46ee5d2"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringRiffle", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"LlamaDetokenize", "[", 
+      RowBox[{"llama", ",", "#"}], "]"}], "&"}], "/@", 
+    RowBox[{"LlamaTokenize", "[", 
+     RowBox[{"llama", ",", 
+      RowBox[{"ExampleData", "[", 
+       RowBox[{"{", 
+        RowBox[{"\"\<Text\>\"", ",", "\"\<GettysburgAddress\>\""}], "}"}], 
+       "]"}], ",", 
+      RowBox[{"\"\<IncludeStartOfStringToken\>\"", "->", "False"}]}], "]"}]}],
+    ",", "\"\<|\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.914953147821333*^9, 3.914953149440654*^9}},
+ CellLabel->"In[27]:=",ExpressionUUID->"fc8f9f55-e24e-4a72-80a0-79fddd9736d7"],
+
+Cell[BoxData["\<\" Four| score| and| seven| years| ago|,| our| f|athers| \
+brought| forth| upon| this| continent| a| new| nation|:| conce|ived| in| \
+liberty|,| and| dedicated| to| the| proposition| that| all| men| are| \
+created| equal|.| Now| we| are| engaged| in| a| great| civil| \
+war|...|testing| whether| that| nation|,| or| any| nation| so| conce|ived| \
+and| so| dedicated|.| .| .| can| long| end|ure|.| We| are| met| on| a| great| \
+battle|field| of| that| war|.| We| have| come| to| dedic|ate| a| portion| of| \
+that| field| as| a| final| rest|ing| place| for| those| who| here| gave| \
+their| lives| that| this| nation| might| live|.| It| is| altogether| fitting| \
+and| proper| that| we| should| do| this|.| But|,| in| a| larger| sense|,| we| \
+cannot| dedic|ate|...|we| cannot| consec|rate|...| we| cannot| h|allow| this| \
+ground|.| The| brave| men|,| living| and| dead|,| who| strugg|led| here| \
+have| consec|r|ated| it|,| far| above| our| poor| power| to| add| or| \
+det|ract|.| The| world| will| little| note|,| nor| long| remember|,| what| \
+we| say| here|,| but| it| can| never| forget| what| they| did| here|.| It| \
+is| for| us| the| living|,| rather|,| to| be| dedicated| here| to| the| \
+un|fin|ished| work| which| they| who| fought| here| have| thus| far| so| \
+nob|ly| advanced|.| It| is| rather| for| us| to| be| here| dedicated| to| \
+the| great| task| remaining| before| us|...|that| from| these| hon|ored| \
+dead| we| take| increased| dev|otion| to| that| cause| for| which| they| \
+gave| the| last| full| measure| of| dev|otion|...| that| we| here| highly| \
+resolve| that| these| dead| shall| not| have| died| in| vain|...|that| this| \
+nation|,| under| God|,| shall| have| a| new| birth| of| freedom|...|and| \
+that| government| of| the| people|,| by| the| people|,| for| the| people|,| \
+shall| not| per|ish| from| this| earth|.\"\>"], "Output",
+ CellChangeTimes->{3.9149531508593273`*^9},
+ CellLabel->"Out[27]=",ExpressionUUID->"5e21f07d-a692-4cd5-8f8a-d6d8d42f0cb9"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Low-level interface", "Section",
+ CellChangeTimes->{{3.914953164188396*^9, 
+  3.914953166604335*^9}},ExpressionUUID->"5206849f-5999-4dd9-9114-\
+f3a41c97b2b3"],
+
+Cell["\<\
+This paclet also has lots of lower-level functions that mirror the llama.cpp \
+C API. These can be seen here:\
+\>", "Text",
+ CellChangeTimes->{{3.914953169323224*^9, 
+  3.914953195710971*^9}},ExpressionUUID->"be716843-fd52-47cc-a254-\
+c1a567368268"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "ChristopherWolfram`LlamaLink`*"}]], "Input",
+ CellChangeTimes->{{3.914953197576542*^9, 3.914953208014378*^9}},
+ CellLabel->"In[29]:=",ExpressionUUID->"7950e67b-3c38-4111-9825-418a301ca8ca"],
+
+Cell[BoxData[
+ StyleBox[
+  FrameBox[GridBox[{
+     {
+      DynamicModuleBox[{Typeset`open$$ = True}, 
+       PaneSelectorBox[{False->
+        ButtonBox[
+         RowBox[{
+          
+          DynamicBox[FEPrivate`FrontEndResource[
+           "FEBitmaps", "RightPointerOpener"]], " ", 
+          
+          StyleBox["ChristopherWolfram`LlamaLink`", 
+           "InformationGridGroupHeader"]}],
+         Appearance->None,
+         BaseStyle->"InformationGridLink",
+         ButtonFunction:>FEPrivate`Set[Typeset`open$$, True],
+         Evaluator->Automatic,
+         Method->"Preemptive"], True->
+        PaneBox[GridBox[{
+           {
+            ButtonBox[
+             RowBox[{
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"],
+               ImageSizeCache->{10., {3., 7.}}], " ", 
+              
+              StyleBox["ChristopherWolfram`LlamaLink`", 
+               "InformationGridGroupHeader"]}],
+             Appearance->None,
+             BaseStyle->"InformationGridLink",
+             ButtonFunction:>FEPrivate`Set[Typeset`open$$, False],
+             Evaluator->Automatic,
+             Method->"Preemptive"]},
+           {
+            PaneBox[GridBox[{
+               {
+                ButtonBox[
+                 StyleBox["InitializeLlama", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-302959ff-03e4-4bb8-9a67-451217320070", {
+                   "InitializeLlama", "ChristopherWolfram`LlamaLink`"}, False},
+                 ButtonNote->"ChristopherWolfram`LlamaLink`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["LlamaContext", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-302959ff-03e4-4bb8-9a67-451217320070", {
+                   "LlamaContext", "ChristopherWolfram`LlamaLink`"}, False},
+                 ButtonNote->"ChristopherWolfram`LlamaLink`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["LlamaObject", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-302959ff-03e4-4bb8-9a67-451217320070", {
+                   "LlamaObject", "ChristopherWolfram`LlamaLink`"}, False},
+                 ButtonNote->"ChristopherWolfram`LlamaLink`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["LlamaBatch", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-302959ff-03e4-4bb8-9a67-451217320070", {
+                   "LlamaBatch", "ChristopherWolfram`LlamaLink`"}, False},
+                 ButtonNote->"ChristopherWolfram`LlamaLink`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["LlamaContextCreate", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-302959ff-03e4-4bb8-9a67-451217320070", {
+                   "LlamaContextCreate", "ChristopherWolfram`LlamaLink`"}, 
+                   False},
+                 ButtonNote->"ChristopherWolfram`LlamaLink`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["LlamaObjectCreate", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-302959ff-03e4-4bb8-9a67-451217320070", {
+                   "LlamaObjectCreate", "ChristopherWolfram`LlamaLink`"}, 
+                   False},
+                 ButtonNote->"ChristopherWolfram`LlamaLink`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["LlamaBatchCreate", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-302959ff-03e4-4bb8-9a67-451217320070", {
+                   "LlamaBatchCreate", "ChristopherWolfram`LlamaLink`"}, 
+                   False},
+                 ButtonNote->"ChristopherWolfram`LlamaLink`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["LlamaDecode", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-302959ff-03e4-4bb8-9a67-451217320070", {
+                   "LlamaDecode", "ChristopherWolfram`LlamaLink`"}, False},
+                 ButtonNote->"ChristopherWolfram`LlamaLink`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["LlamaSample", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-302959ff-03e4-4bb8-9a67-451217320070", {
+                   "LlamaSample", "ChristopherWolfram`LlamaLink`"}, False},
+                 ButtonNote->"ChristopherWolfram`LlamaLink`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["LlamaBatchFill", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-302959ff-03e4-4bb8-9a67-451217320070", {
+                   "LlamaBatchFill", "ChristopherWolfram`LlamaLink`"}, False},
+                 
+                 ButtonNote->"ChristopherWolfram`LlamaLink`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["LlamaDetokenize", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-302959ff-03e4-4bb8-9a67-451217320070", {
+                   "LlamaDetokenize", "ChristopherWolfram`LlamaLink`"}, False},
+                 ButtonNote->"ChristopherWolfram`LlamaLink`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["LlamaTokenize", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-302959ff-03e4-4bb8-9a67-451217320070", {
+                   "LlamaTokenize", "ChristopherWolfram`LlamaLink`"}, False},
+                 ButtonNote->"ChristopherWolfram`LlamaLink`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["LlamaCandidates", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-302959ff-03e4-4bb8-9a67-451217320070", {
+                   "LlamaCandidates", "ChristopherWolfram`LlamaLink`"}, False},
+                 ButtonNote->"ChristopherWolfram`LlamaLink`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["LlamaEvaluate", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-302959ff-03e4-4bb8-9a67-451217320070", {
+                   "LlamaEvaluate", "ChristopherWolfram`LlamaLink`"}, False},
+                 ButtonNote->"ChristopherWolfram`LlamaLink`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["$LibLlama", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-302959ff-03e4-4bb8-9a67-451217320070", {
+                   "$LibLlama", "ChristopherWolfram`LlamaLink`"}, False},
+                 ButtonNote->"ChristopherWolfram`LlamaLink`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["LlamaCandidatesCreate", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-302959ff-03e4-4bb8-9a67-451217320070", {
+                   "LlamaCandidatesCreate", "ChristopherWolfram`LlamaLink`"}, 
+                   False},
+                 ButtonNote->"ChristopherWolfram`LlamaLink`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["LlamaGenerate", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-302959ff-03e4-4bb8-9a67-451217320070", {
+                   "LlamaGenerate", "ChristopherWolfram`LlamaLink`"}, False},
+                 ButtonNote->"ChristopherWolfram`LlamaLink`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["$LlamaInstallPath", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-302959ff-03e4-4bb8-9a67-451217320070", {
+                   "$LlamaInstallPath", "ChristopherWolfram`LlamaLink`"}, 
+                   False},
+                 ButtonNote->"ChristopherWolfram`LlamaLink`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["LlamaCandidatesPrepare", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-302959ff-03e4-4bb8-9a67-451217320070", {
+                   "LlamaCandidatesPrepare", "ChristopherWolfram`LlamaLink`"},
+                    False},
+                 ButtonNote->"ChristopherWolfram`LlamaLink`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["LlamaModel", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-302959ff-03e4-4bb8-9a67-451217320070", {
+                   "LlamaModel", "ChristopherWolfram`LlamaLink`"}, False},
+                 ButtonNote->"ChristopherWolfram`LlamaLink`",
+                 Evaluator->Automatic], ""},
+               {
+                ButtonBox[
+                 StyleBox["LlamaCandidatesSample", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-302959ff-03e4-4bb8-9a67-451217320070", {
+                   "LlamaCandidatesSample", "ChristopherWolfram`LlamaLink`"}, 
+                   False},
+                 ButtonNote->"ChristopherWolfram`LlamaLink`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["LlamaModelCreate", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-302959ff-03e4-4bb8-9a67-451217320070", {
+                   "LlamaModelCreate", "ChristopherWolfram`LlamaLink`"}, 
+                   False},
+                 ButtonNote->"ChristopherWolfram`LlamaLink`",
+                 Evaluator->Automatic], ""}
+              },
+              DefaultBaseStyle->"Text",
+              
+              GridBoxAlignment->{
+               "Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+              GridBoxItemSize->{"Columns" -> {{
+                   Scaled[0.31666666666666665`]}}}],
+             ImageMargins->{{10, 0}, {0, 2}}]}
+          },
+          GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}],
+         FrameMargins->{{0, 0}, {8, 0}}]}, Dynamic[Typeset`open$$],
+        ImageSize->Automatic]]}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+    GridBoxDividers->{"ColumnsIndexed" -> {{False}}, "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.5599999999999999]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.8]}, 
+        Offset[0.2]}}],
+   BaseStyle->"InformationTitleFrame"], "InformationGridPlain"]], "Output",
+ CellChangeTimes->{{3.914953204316464*^9, 3.914953208285378*^9}},
+ CellLabel->"Out[29]=",ExpressionUUID->"a8781bba-cbb9-4bfb-b607-b5be331a498f"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 911},
+WindowMargins->{{132, Automatic}, {0, Automatic}},
+FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"42a02e93-8b9a-4a62-92c3-a861c3bfad8b"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 159, 3, 67, "Section",ExpressionUUID->"185f86b6-bf9a-41a4-bf67-3f8f93607d7e"],
+Cell[742, 27, 160, 3, 35, "Text",ExpressionUUID->"17445dc0-c856-41da-9527-3d115561b6a7"],
+Cell[905, 32, 315, 6, 30, "Input",ExpressionUUID->"1096925a-7eda-47f6-b9b2-a3f2e72d96b5"],
+Cell[1223, 40, 178, 3, 35, "Text",ExpressionUUID->"21384ef4-4c54-460a-9523-3a90b92feb31"],
+Cell[CellGroupData[{
+Cell[1426, 47, 249, 4, 30, "Input",ExpressionUUID->"4a7fc582-387c-4be2-b274-5d2f9d206315"],
+Cell[1678, 53, 24360, 422, 61, "Output",ExpressionUUID->"1e180156-048a-43b1-af5a-a4211072e212"]
+}, Open  ]],
+Cell[26053, 478, 198, 7, 35, "Text",ExpressionUUID->"a529cf23-8994-4614-b1b7-7f288de4309f"],
+Cell[26254, 487, 241, 4, 30, "Input",ExpressionUUID->"e702f40d-26be-4238-a0ce-b8f2e8cb4c28"],
+Cell[26498, 493, 283, 6, 58, "Text",ExpressionUUID->"4f3929a4-3a59-449d-ad58-3065dfb8aa46"],
+Cell[CellGroupData[{
+Cell[26806, 503, 286, 4, 30, "Input",ExpressionUUID->"cb085bb3-abb9-4345-8d65-1f1fcb392b24"],
+Cell[27095, 509, 1842, 26, 34, "Output",ExpressionUUID->"2789d6e8-b489-4972-b61e-cd7cdfd6fa1d"]
+}, Open  ]],
+Cell[28952, 538, 228, 5, 30, "Input",ExpressionUUID->"384c0c0b-8663-46b7-ace2-f3e8dc424ba3"],
+Cell[29183, 545, 161, 2, 35, "Text",ExpressionUUID->"26931dad-d77e-49b8-ae4e-651cfab14e38"],
+Cell[29347, 549, 207, 3, 30, "Input",ExpressionUUID->"f6ea2fa1-a110-4d23-a0cf-4b75113dce28"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29591, 557, 169, 3, 67, "Section",ExpressionUUID->"61c82764-3ef9-4c02-ad7b-fabb1a681056"],
+Cell[CellGroupData[{
+Cell[29785, 564, 157, 3, 54, "Subsection",ExpressionUUID->"c2cba284-ee18-42e7-9ec2-5a85e22fa4e6"],
+Cell[29945, 569, 178, 3, 35, "Text",ExpressionUUID->"b6e9afb8-5b8b-44a2-9176-4f46c466f377"],
+Cell[30126, 574, 339, 8, 30, "Input",ExpressionUUID->"d0dd16d8-4902-4da5-aca4-2a2a96d308e0"],
+Cell[30468, 584, 164, 3, 35, "Text",ExpressionUUID->"628b8804-eefd-4826-9e64-5ee1a8c72196"],
+Cell[CellGroupData[{
+Cell[30657, 591, 312, 5, 30, "Input",ExpressionUUID->"3ad54c00-3842-4567-86d1-234609cd1ce7"],
+Cell[30972, 598, 216, 2, 34, "Output",ExpressionUUID->"11b764c8-b3b6-4efc-9319-de0fa79bc2a7"]
+}, Open  ]],
+Cell[31203, 603, 224, 7, 35, "Text",ExpressionUUID->"1db9428e-553e-47be-b64d-b0d5c28ab70f"],
+Cell[CellGroupData[{
+Cell[31452, 614, 1076, 26, 157, "Input",ExpressionUUID->"2acb33f2-045b-4f9e-b1f4-3b8e6d624064"],
+Cell[32531, 642, 232, 3, 34, "Output",ExpressionUUID->"c32565f1-8086-40a5-a942-2f54acad478f"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32812, 651, 159, 3, 54, "Subsection",ExpressionUUID->"eeb2629f-b1f7-42dc-800f-0490f6b19cfc"],
+Cell[32974, 656, 161, 3, 35, "Text",ExpressionUUID->"0b24a1e2-765b-4850-b6bd-7360d5fdb952"],
+Cell[CellGroupData[{
+Cell[33160, 663, 276, 5, 30, "Input",ExpressionUUID->"5b014e7e-f7da-4338-8575-6c5b8b8bad49"],
+Cell[33439, 670, 294, 6, 34, "Output",ExpressionUUID->"2e8e1dc3-c487-42da-9198-7a2b5eca5fd3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[33770, 681, 349, 6, 52, "Input",ExpressionUUID->"25f74c1e-be86-4330-99d0-e1c7652e29f2"],
+Cell[34122, 689, 284, 6, 34, "Output",ExpressionUUID->"c5e2dab7-79a6-4ef1-82bb-3b6e3c2f2e21"]
+}, Open  ]],
+Cell[34421, 698, 184, 3, 35, "Text",ExpressionUUID->"79af7120-2c83-4963-a6e8-5764a46ee5d2"],
+Cell[CellGroupData[{
+Cell[34630, 705, 654, 16, 73, "Input",ExpressionUUID->"fc8f9f55-e24e-4a72-80a0-79fddd9736d7"],
+Cell[35287, 723, 2003, 26, 518, "Output",ExpressionUUID->"5e21f07d-a692-4cd5-8f8a-d6d8d42f0cb9"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[37351, 756, 164, 3, 67, "Section",ExpressionUUID->"5206849f-5999-4dd9-9114-f3a41c97b2b3"],
+Cell[37518, 761, 259, 6, 35, "Text",ExpressionUUID->"be716843-fd52-47cc-a254-c1a567368268"],
+Cell[CellGroupData[{
+Cell[37802, 771, 218, 3, 30, "Input",ExpressionUUID->"7950e67b-3c38-4111-9825-418a301ca8ca"],
+Cell[38023, 776, 13234, 298, 246, "Output",ExpressionUUID->"a8781bba-cbb9-4bfb-b607-b5be331a498f"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
