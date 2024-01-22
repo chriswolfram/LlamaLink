@@ -1,35 +1,28 @@
-(* ::Package:: *)
-
-(* ::Section:: *)
-(*Package Header*)
-
-
 BeginPackage["ChristopherWolfram`LlamaLink`"];
 
 
-(* ::Text:: *)
-(*Declare your public symbols here:*)
+$LibLlama
 
+InitializeLlama
 
-SayHello;
+LlamaModel
+LlamaModelCreate
+
+LlamaContext
+LlamaContextCreate
+
+LlamaTokenize
+LlamaDetokenize
 
 
 Begin["`Private`"];
 
 
-(* ::Section:: *)
-(*Definitions*)
-
-
-(* ::Text:: *)
-(*Define your public and private symbols here:*)
-
-
-SayHello[name_? StringQ] := "Hello " <> name <> "!";
-
-
-(* ::Section::Closed:: *)
-(*Package Footer*)
+Needs["ChristopherWolfram`LlamaLink`LibLlama`"]
+Needs["ChristopherWolfram`LlamaLink`Initialization`"]
+Needs["ChristopherWolfram`LlamaLink`Models`"]
+Needs["ChristopherWolfram`LlamaLink`Contexts`"]
+Needs["ChristopherWolfram`LlamaLink`Tokenization`"]
 
 
 End[];
