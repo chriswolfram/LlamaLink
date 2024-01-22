@@ -125,18 +125,22 @@ Options[LlamaGenerate] = Join[
 	Options[LlamaSample],
 	{
 		"MaxTokens" -> Automatic,
-		"StopTokens" -> Automatic
+		"StopTokens" -> Automatic,
+		HandlerFunctions -> <||>
 	}
 ];
 
 iLlamaGenerate[llama_LlamaObject, promptTokens:{___Integer}, opts_] :=
-	Enclose@Module[{maxTokens, stopTokens, tokens, newToken},
+	Enclose@Module[{maxTokens, stopTokens, callback, tokens, newToken},
+
 		llamaReset[llama];
 
 		maxTokens = ConfirmMatch[Replace[OptionValue[LlamaGenerate, opts, "MaxTokens"], Automatic->Infinity], _Integer | Infinity];
 
 		stopTokens = ConfirmMatch[Replace[OptionValue[LlamaGenerate, opts, "StopTokens"], Automatic->{}], {_?StringQ...}];
 		stopTokens = Append[stopTokens, llama["Model"]["EndOfStringToken"]];
+
+		callback = Lookup[OptionValue[LlamaGenerate, opts, HandlerFunctions], "NewToken", Identity];
 
 		(* Evaluate the prompt *)
 		LlamaEvaluate[llama, promptTokens];
@@ -146,6 +150,7 @@ iLlamaGenerate[llama_LlamaObject, promptTokens:{___Integer}, opts_] :=
 		Do[
 			newToken = LlamaSample[llama, FilterRules[opts, Options[LlamaSample]]];
 			If[MemberQ[stopTokens, newToken], Break[]];
+			callback[newToken];
 			AppendTo[tokens, newToken];
 			LlamaEvaluate[llama, {newToken}]
 			,
@@ -154,6 +159,9 @@ iLlamaGenerate[llama_LlamaObject, promptTokens:{___Integer}, opts_] :=
 
 		tokens
 	]
+
+iLlamaGenerate[llama_LlamaObject, promptStr_?StringQ, opts_] :=
+	Enclose@LlamaDetokenize[llama, Confirm@iLlamaGenerate[llama, Confirm@LlamaTokenize[llama, promptStr], opts]]
 
 
 End[];
