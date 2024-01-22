@@ -30,7 +30,7 @@ LlamaObjectCreate
 
 LlamaEvaluate
 LlamaSample
-LlamaSynthesize
+LlamaGenerate
 
 Begin["`Private`"];
 
