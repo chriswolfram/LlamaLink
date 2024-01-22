@@ -46,7 +46,7 @@ iLlamaTokenize[model_LlamaModel, inputBytes_ByteArray, opts_] :=
 				bufsize = -ntokens;
 				buf = RawMemoryAllocate[$TokenType, bufsize];
 				ntokens2 = tokenizeC[model["RawModel"], inputBuf, Length[inputBytes], buf, bufsize, Boole[addBOS], Boole[special]];
-				ConfirmAssert[ntokens2 =!= -ntokens];
+				ConfirmAssert[ntokens2 === -ntokens];
 				ntokens = ntokens2;
 			];
 
@@ -68,10 +68,10 @@ tokenToPieceC := tokenToPieceC =
 		} -> "Integer32"
 	];
 
-DeclareFunction[LlamaDetokenize, iLlamaDetokenize, 2];
+DeclareFunction[LlamaDetokenize, iLlamaDetokenize, {2,3}];
 
 (* Based on the std::string llama_token_to_piece function in common.cpp *)
-iLlamaDetokenize[model_LlamaModel, token_Integer, opts_] :=
+iLlamaDetokenize[model_LlamaModel, token_Integer, form_, opts_] :=
 	Enclose@Module[{bufsize, buf, nchars, nchars2},
 
 		bufsize = 8;
@@ -83,15 +83,26 @@ iLlamaDetokenize[model_LlamaModel, token_Integer, opts_] :=
 			bufsize = -nchars;
 			buf = RawMemoryAllocate["CUnsignedChar", bufsize];
 			nchars2 = tokenToPieceC[model["RawModel"], token, buf, bufsize];
-			ConfirmAssert[nchars2 =!= -nchars];
+			ConfirmAssert[nchars2 === -nchars];
 			nchars = nchars2
 		];
 
-		RawMemoryImport[buf, {"String", nchars}]
+		Switch[form,
+			"ByteArray", RawMemoryImport[buf, {"ByteArray", nchars}],
+			"String",    RawMemoryImport[buf, {"String", nchars}],
+			_,           ConfirmAssert[False, "Unknown return form "<>form<>"."]
+		]
 	]
 
-iLlamaDetokenize[model_LlamaModel, tokens:{___Integer}, opts_] :=
-	StringJoin[iLlamaDetokenize[model, #, opts] &/@ tokens]
+iLlamaDetokenize[model_LlamaModel, tokens:{___Integer}, form_, opts_] :=
+	Enclose@Switch[form,
+		"ByteArray", Join@@(iLlamaDetokenize[model, #, form, opts] &/@ tokens),
+		"String",    StringJoin[iLlamaDetokenize[model, #, form, opts] &/@ tokens],
+		_,           ConfirmAssert[False, "Unknown return form "<>form<>"."]
+	]
+
+iLlamaDetokenize[model_, tokenSpec_, opts_] :=
+	iLlamaDetokenize[model, tokenSpec, "String", opts]
 
 
 End[];

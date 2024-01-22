@@ -10,17 +10,17 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     90864,       1773]
-NotebookOptionsPosition[     88668,       1728]
-NotebookOutlinePosition[     89066,       1744]
-CellTagsIndexPosition[     89023,       1741]
+NotebookDataLength[     98743,       1911]
+NotebookOptionsPosition[     95994,       1857]
+NotebookOutlinePosition[     96392,       1873]
+CellTagsIndexPosition[     96349,       1870]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData["Quit"], "Input",
  CellChangeTimes->{{3.914897849028544*^9, 3.9148978493285007`*^9}},
- CellLabel->"In[10]:=",ExpressionUUID->"3e1bd1fa-168b-4720-97a3-8fe09665b78d"],
+ CellLabel->"In[11]:=",ExpressionUUID->"3e1bd1fa-168b-4720-97a3-8fe09665b78d"],
 
 Cell[BoxData[
  RowBox[{
@@ -441,8 +441,13 @@ Cell[BoxData[
    3.9148997017012987`*^9, 3.914899838349832*^9, {3.9149002612870073`*^9, 
    3.914900287103238*^9}, 3.914900408303787*^9, 3.91490120103924*^9, 
    3.914901236317236*^9, 3.914901271149416*^9, 3.914901302388612*^9, {
-   3.9149013377980337`*^9, 3.914901382775219*^9}},
- CellLabel->"Out[2]=",ExpressionUUID->"0fc05deb-b8f7-471c-84b0-b02092cce63c"]
+   3.9149013377980337`*^9, 3.914901382775219*^9}, {3.9149027587830544`*^9, 
+   3.9149028124245243`*^9}, {3.914903130079968*^9, 3.914903175018915*^9}, 
+   3.914903218459729*^9, {3.91490346615273*^9, 3.914903484369886*^9}, 
+   3.914903557833712*^9, 3.9149036209868183`*^9, {3.914903677322935*^9, 
+   3.9149037062716637`*^9}, 3.9149038079088078`*^9, {3.914903844789468*^9, 
+   3.914903873073945*^9}},
+ CellLabel->"Out[2]=",ExpressionUUID->"894651a8-b793-474a-bed5-07d313b1d694"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -466,8 +471,13 @@ lib/libllama.dylib\"\>"], "Output",
    3.914899701875684*^9, 3.914899838529072*^9, {3.914900261481558*^9, 
    3.914900287277533*^9}, 3.914900408496337*^9, 3.914901201221487*^9, 
    3.9149012364932213`*^9, 3.914901271343833*^9, 3.9149013025750027`*^9, {
-   3.914901337972143*^9, 3.9149013829638844`*^9}},
- CellLabel->"Out[4]=",ExpressionUUID->"49ad6b5c-0fbf-41de-9a75-5c28aafd5049"]
+   3.914901337972143*^9, 3.9149013829638844`*^9}, {3.914902758975155*^9, 
+   3.914902812613511*^9}, {3.914903130266099*^9, 3.914903175204423*^9}, 
+   3.91490321864314*^9, {3.91490346634455*^9, 3.914903484564117*^9}, 
+   3.914903558016139*^9, 3.914903621170051*^9, {3.914903677524378*^9, 
+   3.914903706470441*^9}, 3.9149038081134453`*^9, {3.9149038449786367`*^9, 
+   3.914903873261689*^9}},
+ CellLabel->"Out[4]=",ExpressionUUID->"95f0b2e5-fdc7-4210-928b-efd3bd8691be"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -525,8 +535,8 @@ Cell[BoxData[
                     TagBox[
                     InterpretationBox[
                     StyleBox[
-                    SubscriptBox["\"161006690\"", "\"16\""], 
-                    ShowStringCharacters -> False], 5922383504, Editable -> 
+                    SubscriptBox["\"133e05c60\"", "\"16\""], 
+                    ShowStringCharacters -> False], 5165309024, Editable -> 
                     False], BaseForm[#, 16]& ], "SummaryItem"]}]}}, 
                     GridBoxAlignment -> {
                     "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
@@ -551,8 +561,8 @@ Cell[BoxData[
                     TagBox[
                     InterpretationBox[
                     StyleBox[
-                    SubscriptBox["\"161006690\"", "\"16\""], 
-                    ShowStringCharacters -> False], 5922383504, Editable -> 
+                    SubscriptBox["\"133e05c60\"", "\"16\""], 
+                    ShowStringCharacters -> False], 5165309024, Editable -> 
                     False], BaseForm[#, 16]& ], "SummaryItem"]}]}}, 
                     GridBoxAlignment -> {
                     "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
@@ -571,7 +581,7 @@ Cell[BoxData[
                     BaselinePosition -> {1, 1}]}, 
                     Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
                     "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
-                  OpaqueRawPointer[5922383504], Selectable -> False, Editable -> 
+                  OpaqueRawPointer[5165309024], Selectable -> False, Editable -> 
                   False, SelectWithContents -> True], "SummaryItem"]}, {
                 RowBox[{
                   TagBox["\"active: \"", "SummaryItemAnnotation"], 
@@ -620,8 +630,8 @@ Cell[BoxData[
                     TagBox[
                     InterpretationBox[
                     StyleBox[
-                    SubscriptBox["\"161006690\"", "\"16\""], 
-                    ShowStringCharacters -> False], 5922383504, Editable -> 
+                    SubscriptBox["\"133e05c60\"", "\"16\""], 
+                    ShowStringCharacters -> False], 5165309024, Editable -> 
                     False], BaseForm[#, 16]& ], "SummaryItem"]}]}}, 
                     GridBoxAlignment -> {
                     "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
@@ -646,8 +656,8 @@ Cell[BoxData[
                     TagBox[
                     InterpretationBox[
                     StyleBox[
-                    SubscriptBox["\"161006690\"", "\"16\""], 
-                    ShowStringCharacters -> False], 5922383504, Editable -> 
+                    SubscriptBox["\"133e05c60\"", "\"16\""], 
+                    ShowStringCharacters -> False], 5165309024, Editable -> 
                     False], BaseForm[#, 16]& ], "SummaryItem"]}]}}, 
                     GridBoxAlignment -> {
                     "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
@@ -666,7 +676,7 @@ Cell[BoxData[
                     BaselinePosition -> {1, 1}]}, 
                     Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
                     "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
-                  OpaqueRawPointer[5922383504], Selectable -> False, Editable -> 
+                  OpaqueRawPointer[5165309024], Selectable -> False, Editable -> 
                   False, SelectWithContents -> True], "SummaryItem"]}, {
                 RowBox[{
                   TagBox["\"active: \"", "SummaryItemAnnotation"], 
@@ -773,7 +783,7 @@ install/lib/libllama.dylib\"", "SummaryItem"]}]}},
 lib/libllama.dylib", "llama_free_model", 
                     DataStructure[
                     "RawForeignFunction", {
-                    "FunctionPointer" -> OpaqueRawPointer[5940901892], 
+                    "FunctionPointer" -> OpaqueRawPointer[5221431300], 
                     "Type" -> ({"OpaqueRawPointer"} -> "Void")}]], Selectable -> 
                     False, Editable -> False, SelectWithContents -> True], 
                    "SummaryItem"]}]}, {
@@ -797,8 +807,8 @@ lib/libllama.dylib", "llama_free_model",
                     TagBox[
                     InterpretationBox[
                     StyleBox[
-                    SubscriptBox["\"161006690\"", "\"16\""], 
-                    ShowStringCharacters -> False], 5922383504, Editable -> 
+                    SubscriptBox["\"133e05c60\"", "\"16\""], 
+                    ShowStringCharacters -> False], 5165309024, Editable -> 
                     False], BaseForm[#, 16]& ], "SummaryItem"]}]}}, 
                     GridBoxAlignment -> {
                     "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
@@ -823,8 +833,8 @@ lib/libllama.dylib", "llama_free_model",
                     TagBox[
                     InterpretationBox[
                     StyleBox[
-                    SubscriptBox["\"161006690\"", "\"16\""], 
-                    ShowStringCharacters -> False], 5922383504, Editable -> 
+                    SubscriptBox["\"133e05c60\"", "\"16\""], 
+                    ShowStringCharacters -> False], 5165309024, Editable -> 
                     False], BaseForm[#, 16]& ], "SummaryItem"]}]}}, 
                     GridBoxAlignment -> {
                     "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
@@ -843,7 +853,7 @@ lib/libllama.dylib", "llama_free_model",
                     BaselinePosition -> {1, 1}]}, 
                     Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
                     "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
-                    OpaqueRawPointer[5922383504], Selectable -> False, 
+                    OpaqueRawPointer[5165309024], Selectable -> False, 
                     Editable -> False, SelectWithContents -> True], 
                    "SummaryItem"]}]}}, 
               GridBoxAlignment -> {
@@ -864,14 +874,14 @@ lib/libllama.dylib", "llama_free_model",
       "SummaryPanel"],
      DynamicModuleValues:>{}], "]"}],
    ManagedObject[
-    OpaqueRawPointer[5922383504], 
-    OpaqueRawPointer[5922383504], 
+    OpaqueRawPointer[5165309024], 
+    OpaqueRawPointer[5165309024], 
     ForeignFunction[
     "/Users/christopher/git/LlamaLink/llama.cpp/build/install/lib/libllama.\
 dylib", "llama_free_model", 
      DataStructure[
      "RawForeignFunction", {
-      "FunctionPointer" -> OpaqueRawPointer[5940901892], 
+      "FunctionPointer" -> OpaqueRawPointer[5221431300], 
        "Type" -> ({"OpaqueRawPointer"} -> "Void")}]]],
    Editable->False,
    SelectWithContents->True,
@@ -881,8 +891,13 @@ dylib", "llama_free_model",
    3.914899716235777*^9}, 3.914899838764785*^9, {3.914900266018867*^9, 
    3.914900287550515*^9}, 3.9149004087392282`*^9, 3.9149012014624777`*^9, 
    3.9149012366418047`*^9, 3.914901271500206*^9, 3.914901302738641*^9, {
-   3.9149013381212683`*^9, 3.914901383119635*^9}},
- CellLabel->"Out[6]=",ExpressionUUID->"c3c691b6-b2cf-4eeb-9931-64666a426692"]
+   3.9149013381212683`*^9, 3.914901383119635*^9}, {3.914902759134612*^9, 
+   3.9149028127832937`*^9}, {3.914903130424554*^9, 3.91490317536026*^9}, 
+   3.914903218796489*^9, {3.9149034665180473`*^9, 3.9149034847257357`*^9}, 
+   3.914903558166771*^9, 3.9149036213225737`*^9, {3.914903677682715*^9, 
+   3.914903706630032*^9}, 3.914903808273264*^9, {3.914903845139901*^9, 
+   3.9149038734174643`*^9}},
+ CellLabel->"Out[6]=",ExpressionUUID->"76079abb-d276-4e2e-8c87-990f2f561cd0"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -933,8 +948,8 @@ Cell[BoxData[
                     TagBox[
                     InterpretationBox[
                     StyleBox[
-                    SubscriptBox["\"135835200\"", "\"16\""], 
-                    ShowStringCharacters -> False], 5192765952, Editable -> 
+                    SubscriptBox["\"13481b800\"", "\"16\""], 
+                    ShowStringCharacters -> False], 5175883776, Editable -> 
                     False], BaseForm[#, 16]& ], "SummaryItem"]}]}}, 
                     GridBoxAlignment -> {
                     "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
@@ -959,8 +974,8 @@ Cell[BoxData[
                     TagBox[
                     InterpretationBox[
                     StyleBox[
-                    SubscriptBox["\"135835200\"", "\"16\""], 
-                    ShowStringCharacters -> False], 5192765952, Editable -> 
+                    SubscriptBox["\"13481b800\"", "\"16\""], 
+                    ShowStringCharacters -> False], 5175883776, Editable -> 
                     False], BaseForm[#, 16]& ], "SummaryItem"]}]}}, 
                     GridBoxAlignment -> {
                     "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
@@ -979,7 +994,7 @@ Cell[BoxData[
                     BaselinePosition -> {1, 1}]}, 
                     Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
                     "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
-                   OpaqueRawPointer[5192765952], Selectable -> False, 
+                   OpaqueRawPointer[5175883776], Selectable -> False, 
                    Editable -> False, SelectWithContents -> True], 
                   "SummaryItem"]}, {
                  RowBox[{
@@ -1029,8 +1044,8 @@ Cell[BoxData[
                     TagBox[
                     InterpretationBox[
                     StyleBox[
-                    SubscriptBox["\"135835200\"", "\"16\""], 
-                    ShowStringCharacters -> False], 5192765952, Editable -> 
+                    SubscriptBox["\"13481b800\"", "\"16\""], 
+                    ShowStringCharacters -> False], 5175883776, Editable -> 
                     False], BaseForm[#, 16]& ], "SummaryItem"]}]}}, 
                     GridBoxAlignment -> {
                     "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
@@ -1055,8 +1070,8 @@ Cell[BoxData[
                     TagBox[
                     InterpretationBox[
                     StyleBox[
-                    SubscriptBox["\"135835200\"", "\"16\""], 
-                    ShowStringCharacters -> False], 5192765952, Editable -> 
+                    SubscriptBox["\"13481b800\"", "\"16\""], 
+                    ShowStringCharacters -> False], 5175883776, Editable -> 
                     False], BaseForm[#, 16]& ], "SummaryItem"]}]}}, 
                     GridBoxAlignment -> {
                     "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
@@ -1075,7 +1090,7 @@ Cell[BoxData[
                     BaselinePosition -> {1, 1}]}, 
                     Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
                     "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
-                   OpaqueRawPointer[5192765952], Selectable -> False, 
+                   OpaqueRawPointer[5175883776], Selectable -> False, 
                    Editable -> False, SelectWithContents -> True], 
                   "SummaryItem"]}, {
                  RowBox[{
@@ -1181,7 +1196,7 @@ install/lib/libllama.dylib\"", "SummaryItem"]}]}},
 lib/libllama.dylib", "llama_free", 
                     DataStructure[
                     "RawForeignFunction", {
-                    "FunctionPointer" -> OpaqueRawPointer[5940907692], 
+                    "FunctionPointer" -> OpaqueRawPointer[5221437100], 
                     "Type" -> ({"OpaqueRawPointer"} -> "Void")}]], Selectable -> 
                     False, Editable -> False, SelectWithContents -> True], 
                     "SummaryItem"]}]}, {
@@ -1205,8 +1220,8 @@ lib/libllama.dylib", "llama_free",
                     TagBox[
                     InterpretationBox[
                     StyleBox[
-                    SubscriptBox["\"135835200\"", "\"16\""], 
-                    ShowStringCharacters -> False], 5192765952, Editable -> 
+                    SubscriptBox["\"13481b800\"", "\"16\""], 
+                    ShowStringCharacters -> False], 5175883776, Editable -> 
                     False], BaseForm[#, 16]& ], "SummaryItem"]}]}}, 
                     GridBoxAlignment -> {
                     "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
@@ -1230,8 +1245,8 @@ lib/libllama.dylib", "llama_free",
                     TagBox[
                     InterpretationBox[
                     StyleBox[
-                    SubscriptBox["\"135835200\"", "\"16\""], 
-                    ShowStringCharacters -> False], 5192765952, Editable -> 
+                    SubscriptBox["\"13481b800\"", "\"16\""], 
+                    ShowStringCharacters -> False], 5175883776, Editable -> 
                     False], BaseForm[#, 16]& ], "SummaryItem"]}]}}, 
                     GridBoxAlignment -> {
                     "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
@@ -1249,7 +1264,7 @@ lib/libllama.dylib", "llama_free",
                     BaselinePosition -> {1, 1}]}, 
                     Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
                     "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
-                    OpaqueRawPointer[5192765952], Selectable -> False, 
+                    OpaqueRawPointer[5175883776], Selectable -> False, 
                     Editable -> False, SelectWithContents -> True], 
                     "SummaryItem"]}]}}, 
                GridBoxAlignment -> {
@@ -1270,14 +1285,14 @@ lib/libllama.dylib", "llama_free",
        "SummaryPanel"],
       DynamicModuleValues:>{}], "]"}],
     ManagedObject[
-     OpaqueRawPointer[5192765952], 
-     OpaqueRawPointer[5192765952], 
+     OpaqueRawPointer[5175883776], 
+     OpaqueRawPointer[5175883776], 
      ForeignFunction[
      "/Users/christopher/git/LlamaLink/llama.cpp/build/install/lib/libllama.\
 dylib", "llama_free", 
       DataStructure[
       "RawForeignFunction", {
-       "FunctionPointer" -> OpaqueRawPointer[5940907692], 
+       "FunctionPointer" -> OpaqueRawPointer[5221437100], 
         "Type" -> ({"OpaqueRawPointer"} -> "Void")}]]],
     Editable->False,
     SelectWithContents->True,
@@ -1321,8 +1336,8 @@ dylib", "llama_free",
                     TagBox[
                     InterpretationBox[
                     StyleBox[
-                    SubscriptBox["\"161006690\"", "\"16\""], 
-                    ShowStringCharacters -> False], 5922383504, Editable -> 
+                    SubscriptBox["\"133e05c60\"", "\"16\""], 
+                    ShowStringCharacters -> False], 5165309024, Editable -> 
                     False], BaseForm[#, 16]& ], "SummaryItem"]}]}}, 
                     GridBoxAlignment -> {
                     "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
@@ -1347,8 +1362,8 @@ dylib", "llama_free",
                     TagBox[
                     InterpretationBox[
                     StyleBox[
-                    SubscriptBox["\"161006690\"", "\"16\""], 
-                    ShowStringCharacters -> False], 5922383504, Editable -> 
+                    SubscriptBox["\"133e05c60\"", "\"16\""], 
+                    ShowStringCharacters -> False], 5165309024, Editable -> 
                     False], BaseForm[#, 16]& ], "SummaryItem"]}]}}, 
                     GridBoxAlignment -> {
                     "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
@@ -1367,7 +1382,7 @@ dylib", "llama_free",
                     BaselinePosition -> {1, 1}]}, 
                     Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
                     "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
-                    OpaqueRawPointer[5922383504], Selectable -> False, 
+                    OpaqueRawPointer[5165309024], Selectable -> False, 
                     Editable -> False, SelectWithContents -> True], 
                    "SummaryItem"]}, {
                   RowBox[{
@@ -1418,8 +1433,8 @@ dylib", "llama_free",
                     TagBox[
                     InterpretationBox[
                     StyleBox[
-                    SubscriptBox["\"161006690\"", "\"16\""], 
-                    ShowStringCharacters -> False], 5922383504, Editable -> 
+                    SubscriptBox["\"133e05c60\"", "\"16\""], 
+                    ShowStringCharacters -> False], 5165309024, Editable -> 
                     False], BaseForm[#, 16]& ], "SummaryItem"]}]}}, 
                     GridBoxAlignment -> {
                     "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
@@ -1444,8 +1459,8 @@ dylib", "llama_free",
                     TagBox[
                     InterpretationBox[
                     StyleBox[
-                    SubscriptBox["\"161006690\"", "\"16\""], 
-                    ShowStringCharacters -> False], 5922383504, Editable -> 
+                    SubscriptBox["\"133e05c60\"", "\"16\""], 
+                    ShowStringCharacters -> False], 5165309024, Editable -> 
                     False], BaseForm[#, 16]& ], "SummaryItem"]}]}}, 
                     GridBoxAlignment -> {
                     "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
@@ -1464,7 +1479,7 @@ dylib", "llama_free",
                     BaselinePosition -> {1, 1}]}, 
                     Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
                     "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
-                    OpaqueRawPointer[5922383504], Selectable -> False, 
+                    OpaqueRawPointer[5165309024], Selectable -> False, 
                     Editable -> False, SelectWithContents -> True], 
                    "SummaryItem"]}, {
                   RowBox[{
@@ -1570,7 +1585,7 @@ install/lib/libllama.dylib\"", "SummaryItem"]}]}},
 lib/libllama.dylib", "llama_free_model", 
                     DataStructure[
                     "RawForeignFunction", {
-                    "FunctionPointer" -> OpaqueRawPointer[5940901892], 
+                    "FunctionPointer" -> OpaqueRawPointer[5221431300], 
                     "Type" -> ({"OpaqueRawPointer"} -> "Void")}]], Selectable -> 
                     False, Editable -> False, SelectWithContents -> True], 
                     "SummaryItem"]}]}, {
@@ -1594,8 +1609,8 @@ lib/libllama.dylib", "llama_free_model",
                     TagBox[
                     InterpretationBox[
                     StyleBox[
-                    SubscriptBox["\"161006690\"", "\"16\""], 
-                    ShowStringCharacters -> False], 5922383504, Editable -> 
+                    SubscriptBox["\"133e05c60\"", "\"16\""], 
+                    ShowStringCharacters -> False], 5165309024, Editable -> 
                     False], BaseForm[#, 16]& ], "SummaryItem"]}]}}, 
                     GridBoxAlignment -> {
                     "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
@@ -1619,8 +1634,8 @@ lib/libllama.dylib", "llama_free_model",
                     TagBox[
                     InterpretationBox[
                     StyleBox[
-                    SubscriptBox["\"161006690\"", "\"16\""], 
-                    ShowStringCharacters -> False], 5922383504, Editable -> 
+                    SubscriptBox["\"133e05c60\"", "\"16\""], 
+                    ShowStringCharacters -> False], 5165309024, Editable -> 
                     False], BaseForm[#, 16]& ], "SummaryItem"]}]}}, 
                     GridBoxAlignment -> {
                     "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
@@ -1638,7 +1653,7 @@ lib/libllama.dylib", "llama_free_model",
                     BaselinePosition -> {1, 1}]}, 
                     Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
                     "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
-                    OpaqueRawPointer[5922383504], Selectable -> False, 
+                    OpaqueRawPointer[5165309024], Selectable -> False, 
                     Editable -> False, SelectWithContents -> True], 
                     "SummaryItem"]}]}}, 
                 GridBoxAlignment -> {
@@ -1659,14 +1674,14 @@ lib/libllama.dylib", "llama_free_model",
         "SummaryPanel"],
        DynamicModuleValues:>{}], "]"}],
      ManagedObject[
-      OpaqueRawPointer[5922383504], 
-      OpaqueRawPointer[5922383504], 
+      OpaqueRawPointer[5165309024], 
+      OpaqueRawPointer[5165309024], 
       ForeignFunction[
       "/Users/christopher/git/LlamaLink/llama.cpp/build/install/lib/libllama.\
 dylib", "llama_free_model", 
        DataStructure[
        "RawForeignFunction", {
-        "FunctionPointer" -> OpaqueRawPointer[5940901892], 
+        "FunctionPointer" -> OpaqueRawPointer[5221431300], 
          "Type" -> ({"OpaqueRawPointer"} -> "Void")}]]],
      Editable->False,
      SelectWithContents->True,
@@ -1674,8 +1689,12 @@ dylib", "llama_free_model",
  CellChangeTimes->{{3.914900271397916*^9, 3.9149002875657063`*^9}, 
    3.9149004087877293`*^9, 3.914901201513124*^9, 3.914901236689947*^9, 
    3.9149012715510197`*^9, 3.914901302793623*^9, {3.914901338174548*^9, 
-   3.9149013831703253`*^9}},
- CellLabel->"Out[7]=",ExpressionUUID->"41868107-bdee-475d-be63-79b757eebdd4"]
+   3.9149013831703253`*^9}, {3.914902759186233*^9, 3.914902812837253*^9}, {
+   3.914903130475356*^9, 3.914903175413842*^9}, 3.914903218847258*^9, {
+   3.914903466569562*^9, 3.914903484776803*^9}, 3.914903558221629*^9, 
+   3.914903621371578*^9, {3.914903677735063*^9, 3.9149037066860123`*^9}, 
+   3.914903808322836*^9, {3.914903845189949*^9, 3.914903873466761*^9}},
+ CellLabel->"Out[7]=",ExpressionUUID->"8eddd8ae-b979-4091-b72b-24b412267d6e"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1694,8 +1713,54 @@ Cell[BoxData[
   "1", ",", "910", ",", "338", ",", "263", ",", "1243", ",", "29991"}], 
   "}"}]], "Output",
  CellChangeTimes->{{3.914901210279483*^9, 3.914901236725422*^9}, {
-  3.914901271560237*^9, 3.914901383177989*^9}},
- CellLabel->"Out[8]=",ExpressionUUID->"ab807e4f-ed8a-4d1b-9a2c-508b8f38a764"]
+   3.914901271560237*^9, 3.914901383177989*^9}, {3.914902759194168*^9, 
+   3.9149028128464127`*^9}, {3.9149031304830723`*^9, 3.9149031754235973`*^9}, 
+   3.914903218855235*^9, {3.9149034665777597`*^9, 3.914903484784471*^9}, 
+   3.91490355822968*^9, 3.914903621380237*^9, {3.914903677743635*^9, 
+   3.9149037066944942`*^9}, 3.914903808330785*^9, {3.91490384519781*^9, 
+   3.914903873474386*^9}},
+ CellLabel->"Out[8]=",ExpressionUUID->"f37132f9-cd3f-4236-835a-90cf3af574b8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"LlamaDetokenize", "[", 
+   RowBox[{"model", ",", 
+    RowBox[{"LlamaTokenize", "[", 
+     RowBox[{"model", ",", 
+      RowBox[{"ByteArray", "[", 
+       RowBox[{"RandomInteger", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "255"}], "}"}], ",", "100"}], "]"}], "]"}]}], 
+     "]"}], ",", "\"\<ByteArray\>\""}], "]"}], "//", "Normal"}]], "Input",
+ CellChangeTimes->{{3.9149040368488607`*^9, 3.91490408840709*^9}},
+ CellLabel->"In[29]:=",ExpressionUUID->"ce66ae5e-5db5-4f59-a71e-5d98a4c998ed"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "32", ",", "200", ",", "104", ",", "242", ",", "202", ",", "123", ",", 
+   "201", ",", "37", ",", "215", ",", "214", ",", "251", ",", "9", ",", "100",
+    ",", "129", ",", "107", ",", "209", ",", "132", ",", "234", ",", "98", 
+   ",", "176", ",", "58", ",", "32", ",", "159", ",", "170", ",", "77", ",", 
+   "117", ",", "226", ",", "14", ",", "116", ",", "129", ",", "114", ",", 
+   "198", ",", "226", ",", "150", ",", "129", ",", "73", ",", "161", ",", 
+   "189", ",", "89", ",", "144", ",", "252", ",", "6", ",", "209", ",", "67", 
+   ",", "228", ",", "130", ",", "3", ",", "174", ",", "251", ",", "74", ",", 
+   "165", ",", "24", ",", "57", ",", "110", ",", "21", ",", "56", ",", "3", 
+   ",", "24", ",", "12", ",", "207", ",", "223", ",", "64", ",", "91", ",", 
+   "122", ",", "174", ",", "191", ",", "175", ",", "144", ",", "154", ",", 
+   "36", ",", "32", ",", "100", ",", "42", ",", "65", ",", "91", ",", "169", 
+   ",", "194", ",", "20", ",", "56", ",", "54", ",", "162", ",", "239", ",", 
+   "5", ",", "164", ",", "123", ",", "81", ",", "80", ",", "2", ",", "220", 
+   ",", "56", ",", "12", ",", "2", ",", "51", ",", "49", ",", "37", ",", 
+   "191", ",", "71", ",", "161", ",", "10", ",", "100", ",", "176", ",", 
+   "160", ",", "7"}], "}"}]], "Output",
+ CellChangeTimes->{{3.914904039366313*^9, 3.91490409082787*^9}},
+ CellLabel->"Out[29]=",ExpressionUUID->"c77d6438-dc9e-4743-90f1-0f23d9043fa9"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1707,8 +1772,12 @@ Cell[BoxData[
  CellLabel->"In[9]:=",ExpressionUUID->"2e446659-100b-45ae-a5b3-e2b2ba6e3609"],
 
 Cell[BoxData["\<\" This is a test!\"\>"], "Output",
- CellChangeTimes->{{3.9149013190931053`*^9, 3.914901383187269*^9}},
- CellLabel->"Out[9]=",ExpressionUUID->"6f5aa966-8b50-4dea-aa16-2db3ba7d2fb6"]
+ CellChangeTimes->{{3.9149013190931053`*^9, 3.914901383187269*^9}, 
+   3.914902759204307*^9, {3.914902790419161*^9, 3.914902812857729*^9}, {
+   3.9149031457966003`*^9, 3.914903175434428*^9}, 3.9149032188677197`*^9, {
+   3.914903467280754*^9, 3.914903484798408*^9}, 3.914903558239931*^9, 
+   3.91490362156187*^9, 3.91490387348473*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"dcb4df13-b250-431f-94d3-a87e33ed962b"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1717,13 +1786,73 @@ Cell[BoxData[
  RowBox[{"model", "[", "\"\<EndOfStringToken\>\"", "]"}]], "Input",
  CellChangeTimes->{{3.914899838869113*^9, 3.91489984455202*^9}, 
    3.914901393534506*^9},
- CellLabel->"In[11]:=",ExpressionUUID->"da826b75-5185-49ad-ac1c-3f0d4b7649c4"],
+ CellLabel->"In[10]:=",ExpressionUUID->"da826b75-5185-49ad-ac1c-3f0d4b7649c4"],
 
 Cell[BoxData["2"], "Output",
  CellChangeTimes->{
   3.9148998447878942`*^9, 3.9149004113256407`*^9, {3.914901384466234*^9, 
-   3.914901393793357*^9}},
- CellLabel->"Out[11]=",ExpressionUUID->"b585c463-c9da-49a2-8852-1c0916b30433"]
+   3.914901393793357*^9}, 3.9149027592069283`*^9, {3.914902791465076*^9, 
+   3.9149028128616543`*^9}, {3.914903145800041*^9, 3.914903175436956*^9}, 
+   3.914903218870427*^9, 3.9149036215666313`*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"fcca7135-d588-4a0b-8e90-e61798c14865"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"LlamaBatchCreate", "[", "10", "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.914902792433386*^9, 3.914902796395406*^9}, {
+   3.914902834089182*^9, 3.914902841205982*^9}, 3.914903149976474*^9},
+ CellLabel->"In[11]:=",ExpressionUUID->"29861758-c67f-4994-a045-13bd59ca4547"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringRiffle", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"LlamaDetokenize", "[", 
+      RowBox[{"model", ",", "#"}], "]"}], "&"}], "/@", 
+    RowBox[{"LlamaTokenize", "[", 
+     RowBox[{"model", ",", 
+      RowBox[{"ExampleData", "[", 
+       RowBox[{"{", 
+        RowBox[{"\"\<Text\>\"", ",", "\"\<GettysburgAddress\>\""}], "}"}], 
+       "]"}], ",", 
+      RowBox[{"\"\<IncludeStartOfStringToken\>\"", "->", "False"}]}], "]"}]}],
+    ",", "\"\<|\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.9149031536791897`*^9, 3.9149031635654097`*^9}, {
+  3.914903195149931*^9, 3.914903205546142*^9}, {3.914903881831105*^9, 
+  3.914903897533753*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"07fafca2-a407-4ade-8f0c-57cf6eda0318"],
+
+Cell[BoxData["\<\" Four| score| and| seven| years| ago|,| our| f|athers| \
+brought| forth| upon| this| continent| a| new| nation|:| conce|ived| in| \
+liberty|,| and| dedicated| to| the| proposition| that| all| men| are| \
+created| equal|.| Now| we| are| engaged| in| a| great| civil| \
+war|...|testing| whether| that| nation|,| or| any| nation| so| conce|ived| \
+and| so| dedicated|.| .| .| can| long| end|ure|.| We| are| met| on| a| great| \
+battle|field| of| that| war|.| We| have| come| to| dedic|ate| a| portion| of| \
+that| field| as| a| final| rest|ing| place| for| those| who| here| gave| \
+their| lives| that| this| nation| might| live|.| It| is| altogether| fitting| \
+and| proper| that| we| should| do| this|.| But|,| in| a| larger| sense|,| we| \
+cannot| dedic|ate|...|we| cannot| consec|rate|...| we| cannot| h|allow| this| \
+ground|.| The| brave| men|,| living| and| dead|,| who| strugg|led| here| \
+have| consec|r|ated| it|,| far| above| our| poor| power| to| add| or| \
+det|ract|.| The| world| will| little| note|,| nor| long| remember|,| what| \
+we| say| here|,| but| it| can| never| forget| what| they| did| here|.| It| \
+is| for| us| the| living|,| rather|,| to| be| dedicated| here| to| the| \
+un|fin|ished| work| which| they| who| fought| here| have| thus| far| so| \
+nob|ly| advanced|.| It| is| rather| for| us| to| be| here| dedicated| to| \
+the| great| task| remaining| before| us|...|that| from| these| hon|ored| \
+dead| we| take| increased| dev|otion| to| that| cause| for| which| they| \
+gave| the| last| full| measure| of| dev|otion|...| that| we| here| highly| \
+resolve| that| these| dead| shall| not| have| died| in| vain|...|that| this| \
+nation|,| under| God|,| shall| have| a| new| birth| of| freedom|...|and| \
+that| government| of| the| people|,| by| the| people|,| for| the| people|,| \
+shall| not| per|ish| from| this| earth|.\"\>"], "Output",
+ CellChangeTimes->{{3.914903885180582*^9, 3.914903898256503*^9}},
+ CellLabel->"Out[12]=",ExpressionUUID->"6d39711c-37d1-4106-a82a-cb458c4b7a67"]
 }, Open  ]]
 },
 WindowSize->{808, 911},
@@ -1747,33 +1876,42 @@ Cell[558, 20, 177, 2, 30, "Input",ExpressionUUID->"3e1bd1fa-168b-4720-97a3-8fe09
 Cell[738, 24, 315, 6, 30, "Input",ExpressionUUID->"3d189dde-9a65-4d5a-8c3f-b8a7fbbde9c3"],
 Cell[CellGroupData[{
 Cell[1078, 34, 249, 4, 30, "Input",ExpressionUUID->"10eed63c-6847-4b84-a815-a9b0a41d8b0a"],
-Cell[1330, 40, 23084, 404, 61, "Output",ExpressionUUID->"0fc05deb-b8f7-471c-84b0-b02092cce63c"]
+Cell[1330, 40, 23431, 409, 61, "Output",ExpressionUUID->"894651a8-b793-474a-bed5-07d313b1d694"]
 }, Open  ]],
-Cell[24429, 447, 241, 4, 30, "Input",ExpressionUUID->"36dea3e3-8cf7-4fea-bce5-c2fa4fb568a3"],
+Cell[24776, 452, 241, 4, 30, "Input",ExpressionUUID->"36dea3e3-8cf7-4fea-bce5-c2fa4fb568a3"],
 Cell[CellGroupData[{
-Cell[24695, 455, 227, 3, 30, "Input",ExpressionUUID->"4813f700-e8b9-4415-9045-a2893dc3e7c1"],
-Cell[24925, 460, 618, 9, 34, "Output",ExpressionUUID->"49ad6b5c-0fbf-41de-9a75-5c28aafd5049"]
+Cell[25042, 460, 227, 3, 30, "Input",ExpressionUUID->"4813f700-e8b9-4415-9045-a2893dc3e7c1"],
+Cell[25272, 465, 958, 14, 34, "Output",ExpressionUUID->"95f0b2e5-fdc7-4210-928b-efd3bd8691be"]
 }, Open  ]],
-Cell[25558, 472, 207, 3, 30, "Input",ExpressionUUID->"741302e4-f929-4210-9b1c-edba16133381"],
+Cell[26245, 482, 207, 3, 30, "Input",ExpressionUUID->"741302e4-f929-4210-9b1c-edba16133381"],
 Cell[CellGroupData[{
-Cell[25790, 479, 387, 8, 30, "Input",ExpressionUUID->"a3345fc5-16cd-4141-accd-f8c668e291f7"],
-Cell[26180, 489, 20262, 395, 78, "Output",ExpressionUUID->"c3c691b6-b2cf-4eeb-9931-64666a426692"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[46479, 889, 252, 4, 30, "Input",ExpressionUUID->"4cf704ea-592e-46e1-9f93-b70f79e80e55"],
-Cell[46734, 895, 40212, 782, 152, "Output",ExpressionUUID->"41868107-bdee-475d-be63-79b757eebdd4"]
+Cell[26477, 489, 387, 8, 30, "Input",ExpressionUUID->"a3345fc5-16cd-4141-accd-f8c668e291f7"],
+Cell[26867, 499, 20609, 400, 78, "Output",ExpressionUUID->"76079abb-d276-4e2e-8c87-990f2f561cd0"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[86983, 1682, 341, 6, 30, "Input",ExpressionUUID->"c34dfed6-5a6b-4935-ac76-fb5f493a0ce4"],
-Cell[87327, 1690, 325, 7, 34, "Output",ExpressionUUID->"ab807e4f-ed8a-4d1b-9a2c-508b8f38a764"]
+Cell[47513, 904, 252, 4, 30, "Input",ExpressionUUID->"4cf704ea-592e-46e1-9f93-b70f79e80e55"],
+Cell[47768, 910, 40548, 786, 152, "Output",ExpressionUUID->"8eddd8ae-b979-4091-b72b-24b412267d6e"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[87689, 1702, 244, 4, 30, "Input",ExpressionUUID->"2e446659-100b-45ae-a5b3-e2b2ba6e3609"],
-Cell[87936, 1708, 197, 2, 34, "Output",ExpressionUUID->"6f5aa966-8b50-4dea-aa16-2db3ba7d2fb6"]
+Cell[88353, 1701, 341, 6, 30, "Input",ExpressionUUID->"c34dfed6-5a6b-4935-ac76-fb5f493a0ce4"],
+Cell[88697, 1709, 672, 12, 34, "Output",ExpressionUUID->"f37132f9-cd3f-4236-835a-90cf3af574b8"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[88170, 1715, 251, 4, 30, "Input",ExpressionUUID->"da826b75-5185-49ad-ac1c-3f0d4b7649c4"],
-Cell[88424, 1721, 228, 4, 34, "Output",ExpressionUUID->"b585c463-c9da-49a2-8852-1c0916b30433"]
+Cell[89406, 1726, 554, 13, 52, "Input",ExpressionUUID->"ce66ae5e-5db5-4f59-a71e-5d98a4c998ed"],
+Cell[89963, 1741, 1448, 21, 119, "Output",ExpressionUUID->"c77d6438-dc9e-4743-90f1-0f23d9043fa9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[91448, 1767, 244, 4, 30, "Input",ExpressionUUID->"2e446659-100b-45ae-a5b3-e2b2ba6e3609"],
+Cell[91695, 1773, 463, 6, 34, "Output",ExpressionUUID->"dcb4df13-b250-431f-94d3-a87e33ed962b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[92195, 1784, 251, 4, 30, "Input",ExpressionUUID->"da826b75-5185-49ad-ac1c-3f0d4b7649c4"],
+Cell[92449, 1790, 400, 6, 34, "Output",ExpressionUUID->"fcca7135-d588-4a0b-8e90-e61798c14865"]
+}, Open  ]],
+Cell[92864, 1799, 305, 5, 30, "Input",ExpressionUUID->"29861758-c67f-4994-a045-13bd59ca4547"],
+Cell[CellGroupData[{
+Cell[93194, 1808, 756, 18, 73, "Input",ExpressionUUID->"07fafca2-a407-4ade-8f0c-57cf6eda0318"],
+Cell[93953, 1828, 2025, 26, 497, "Output",ExpressionUUID->"6d39711c-37d1-4106-a82a-cb458c4b7a67"]
 }, Open  ]]
 }
 ]
