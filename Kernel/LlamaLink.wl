@@ -13,10 +13,14 @@ LlamaContextCreate
 
 LlamaBatch
 LlamaBatchCreate
-LlamaBatchAppend
-LlamaBatchClear
+LlamaBatchFill
 
 LlamaDecode
+
+LlamaCandidates
+LlamaCandidatesCreate
+LlamaCandidatesPrepare
+LlamaCandidatesSample
 
 LlamaTokenize
 LlamaDetokenize

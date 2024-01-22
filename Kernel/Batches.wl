@@ -53,30 +53,45 @@ batchFreeC := batchFreeC =
 	ForeignFunctionLoad[$LibLlama,  "llama_batch_free", {Values@$BatchStruct} -> "Void"];
 
 
-DeclareFunction[LlamaBatchCreate, iLlamaBatchCreate, 1];
+DeclareFunction[LlamaBatchCreate, iLlamaBatchCreate, {1,3}];
 
 iLlamaBatchCreate[ntokens_Integer, opts_] :=
 	With[{batch = batchInitC[ntokens, 0, 1]},
 		LlamaBatch[batch, CreateManagedObject[batch, batchFreeC]]
 	]
 
+iLlamaBatchCreate[tokens:{___Integer}, pos:{___Integer}, includeLogits:{_?BooleanQ...}, opts_] /;
+	Length[tokens] === Length[pos] === Length[includeLogits] :=
+	iLlamaBatchFill[iLlamaBatchCreate[Length[tokens], opts], tokens, pos, includeLogits, opts]
 
-(* LlamaBatchAppend *)
+(* TODO: Do something ebtter here *)
+iLlamaBatchCreate[arg1_, arg2_, opts_] :=
+	$Failed
 
-DeclareFunction[LlamaBatchAppend, iLlamaBatchAppend, {3,4}];
 
-(* Based on llama_batch_add *)
-iLlamaBatchAppend[batch_LlamaBatch, token_Integer, pos_Integer, includeLogits_?BooleanQ, opts_] :=
-	Module[{},
-		RawMemoryWrite[batch["RawTokens"], token, batch["RawNTokens"]];
-		RawMemoryWrite[batch["RawPositions"], pos, batch["RawNTokens"]];
-		RawMemoryWrite[batch["RawNSequenceIDs"], 1, batch["RawNTokens"]];
-		RawMemoryWrite[RawMemoryRead[batch["RawSequenceIDs"], batch["RawNTokens"]], 0, 0];
-		RawMemoryWrite[batch["RawLogits"], Boole[includeLogits], batch["RawNTokens"]];
+(* LlamaBatchFill *)
+
+DeclareFunction[LlamaBatchFill, iLlamaBatchFill, 4];
+
+iLlamaBatchFill[batch_LlamaBatch, tokens:{___Integer}, pos:{___Integer}, includeLogits:{_?BooleanQ...}, opts_] /;
+	Length[tokens] === Length[pos] === Length[includeLogits] :=
+	(
+		MapThread[
+			{t, p, il, i} |-> (
+				RawMemoryWrite[batch["RawTokens"], t, i];
+				RawMemoryWrite[batch["RawPositions"], p, i];
+				RawMemoryWrite[batch["RawNSequenceIDs"], 1, i];
+				RawMemoryWrite[RawMemoryRead[batch["RawSequenceIDs"], i], 0, 0];
+				RawMemoryWrite[batch["RawLogits"], Boole[il], i];
+			),
+			{
+				tokens, pos, includeLogits, Range[0,Length[tokens]-1]
+			}
+		];
 		
 		LlamaBatch[
 			{
-				batch["RawNTokens"] + 1,
+				Length[tokens],
 				batch["RawTokens"],
 				batch["RawEmbeddings"],
 				batch["RawPositions"],
@@ -89,34 +104,7 @@ iLlamaBatchAppend[batch_LlamaBatch, token_Integer, pos_Integer, includeLogits_?B
 			},
 			batch["RawManagedObject"]
 		]
-	]
-
-iLlamaBatchAppend[batch_LlamaBatch, token_Integer, pos_Integer, opts_] :=
-	iLlamaBatchAppend[batch, token, pos, True, opts]
-
-
-(* LlamaBatchClear *)
-
-DeclareFunction[LlamaBatchClear, iLlamaBatchClear, 1];
-
-(* Based on llama_batch_clear *)
-
-iLlamaBatchClear[batch_LlamaBatch, opts_] :=
-	LlamaBatch[
-		{
-			0,
-			batch["RawTokens"],
-			batch["RawEmbeddings"],
-			batch["RawPositions"],
-			batch["RawNSequenceIDs"],
-			batch["RawSequenceIDs"],
-			batch["RawLogits"],
-			batch["RawAllPositions0"],
-			batch["RawAllPositions1"],
-			batch["RawAllSequenceIDs"]
-		},
-		batch["RawManagedObject"]
-	]
+	)
 
 
 End[];
