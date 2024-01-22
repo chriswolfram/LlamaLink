@@ -26,9 +26,7 @@ iLlamaDecode[ctx_LlamaContext, batch_LlamaBatch, opts_] :=
 
 (* Candidates *)
 
-DeclareObject[LlamaCandidates, {
-	_ManagedObject
-}];
+DeclareObject[LlamaCandidates, {_ManagedObject}];
 
 
 (* Accessors *)

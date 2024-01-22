@@ -1,7 +1,5 @@
 BeginPackage["ChristopherWolfram`LlamaLink`LibLlama`"];
 
-$LlamaInstallPath
-
 Begin["`Private`"];
 
 Needs["ChristopherWolfram`LlamaLink`"]

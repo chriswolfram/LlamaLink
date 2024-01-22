@@ -9,13 +9,32 @@ Needs["ChristopherWolfram`LlamaLink`Utilities`"]
 
 (* Context objects *)
 
-DeclareObject[LlamaContext, {_ManagedObject, _LlamaModel}];
+DeclareObject[LlamaContext, {_ManagedObject, _List, _LlamaModel}];
 
 
 (* Accessors *)
 
 ctx_LlamaContext["RawContext"] := ctx[[1]]
-ctx_LlamaContext["Model"] := ctx[[2]]
+ctx_LlamaContext["RawParameters"] := ctx[[2]]
+ctx_LlamaContext["Model"] := ctx[[3]]
+
+
+nCtxC := nCtxC = 
+	ForeignFunctionLoad[$LibLlama, "llama_n_ctx", {"OpaqueRawPointer"} -> "UnsignedInteger32"];
+
+nBatchC := nBatchC = 
+	ForeignFunctionLoad[$LibLlama, "llama_n_batch", {"OpaqueRawPointer"} -> "UnsignedInteger32"];
+
+ctx_LlamaContext["RawNContext"] := nCtxC[ctx["RawContext"]]
+
+ctx_LlamaContext["RawNBatch"] := nBatchC[ctx["RawContext"]]
+
+
+(* Parameters *)
+
+paramIndices := paramIndices = PositionIndex[Keys@$ContextParamsStruct][[All,1]]
+
+ctx_LlamaContext["LogitsAll"] := ctx["RawParameters"][[paramIndices["logits_all"]]]
 
 
 (* Logits *)
@@ -28,6 +47,15 @@ getLogitsIthC := getLogitsIthC =
 
 ctx_LlamaContext["RawGetLogits", i_Integer] :=
 	RawMemoryImport[getLogitsIthC[ctx["RawContext"], i], {"List", ctx["Model"]["VocabularySize"]}]
+
+
+(* KV Cache *)
+
+kvCacheSeqRmC := kvCacheSeqRmC = 
+	ForeignFunctionLoad[$LibLlama, "llama_kv_cache_seq_rm", {"OpaqueRawPointer", $SeqIDType, $PosType, $PosType} -> "Void"];
+
+ctx_LlamaContext["KVCacheSequenceRemove", seqid_, p0_, p1_] :=
+	kvCacheSeqRmC[ctx["RawContext"], seqid, p0, p1]
 
 
 (* Creating contexts *)
@@ -45,11 +73,12 @@ freeC := freeC =
 DeclareFunction[LlamaContextCreate, iLlamaContextCreate, 1];
 
 iLlamaContextCreate[model_LlamaModel, opts_] :=
-	Module[{ptr},
-		ptr = newContextWithModelC[model["RawModel"], contextDefaultParamsC[]];
+	Module[{params, ptr},
+		params = contextDefaultParamsC[];
+		ptr = newContextWithModelC[model["RawModel"], params];
 		If[NullRawPointerQ[ptr],
 			$Failed,
-			LlamaContext[CreateManagedObject[ptr, freeC], model]
+			LlamaContext[CreateManagedObject[ptr, freeC], params, model]
 		]
 	]
 

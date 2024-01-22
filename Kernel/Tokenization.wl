@@ -56,6 +56,9 @@ iLlamaTokenize[model_LlamaModel, inputBytes_ByteArray, opts_] :=
 iLlamaTokenize[model_LlamaModel, inputString_?StringQ, opts_] :=
 	iLlamaTokenize[model, StringToByteArray[inputString, "UTF8"], opts]
 
+iLlamaTokenize[llama_LlamaObject, input_, opts_] :=
+	iLlamaTokenize[llama["Model"], input, opts]
+
 
 (* Detokenize *)
 
@@ -100,6 +103,9 @@ iLlamaDetokenize[model_LlamaModel, tokens:{___Integer}, form_, opts_] :=
 		"String",    StringJoin[iLlamaDetokenize[model, #, form, opts] &/@ tokens],
 		_,           ConfirmAssert[False, "Unknown return form "<>form<>"."]
 	]
+
+iLlamaDetokenize[llama_LlamaObject, tokenSpec_, form_, opts_] :=
+	iLlamaDetokenize[llama["Model"], tokenSpec, form, opts]
 
 iLlamaDetokenize[model_, tokenSpec_, opts_] :=
 	iLlamaDetokenize[model, tokenSpec, "String", opts]
