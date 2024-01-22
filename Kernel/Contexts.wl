@@ -14,8 +14,20 @@ DeclareObject[LlamaContext, {_ManagedObject, _LlamaModel}];
 
 (* Accessors *)
 
-ctx_LlamaModel["RawContext"] := ctx[[1]]
-ctx_LlamaModel["Model"] := ctx[[2]]
+ctx_LlamaContext["RawContext"] := ctx[[1]]
+ctx_LlamaContext["Model"] := ctx[[2]]
+
+
+(* Logits *)
+
+getLogitsC := getLogitsC = 
+	ForeignFunctionLoad[$LibLlama, "llama_get_logits", {"OpaqueRawPointer"} -> "RawPointer"::["CFloat"]];
+
+getLogitsIthC := getLogitsIthC = 
+	ForeignFunctionLoad[$LibLlama, "llama_get_logits_ith", {"OpaqueRawPointer", "Integer32"} -> "RawPointer"::["CFloat"]];
+
+ctx_LlamaContext["RawGetLogits", i_Integer] :=
+	RawMemoryImport[getLogitsIthC[ctx["RawContext"], i], {"List", ctx["Model"]["VocabularySize"]}]
 
 
 (* Creating contexts *)
