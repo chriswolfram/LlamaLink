@@ -57,10 +57,10 @@ iLlamaCandidatesCreate[logits:{___Real}, opts_] :=
 
 DeclareFunction[LlamaCandidatesPrepare, iLlamaCandidatesPrepare, 3];
 
-sampleSoftmaxC = 
+sampleSoftmaxC := sampleSoftmaxC = 
 	ForeignFunctionLoad[$LibLlama, "llama_sample_softmax", {"OpaqueRawPointer", "RawPointer"::[Values@$TokenDataArrayStruct]} -> "Void"];
 
-sampleTempC = 
+sampleTempC := sampleTempC = 
 	ForeignFunctionLoad[$LibLlama, "llama_sample_temp", {"OpaqueRawPointer", "RawPointer"::[Values@$TokenDataArrayStruct], "CFloat"} -> "Void"];
 
 
