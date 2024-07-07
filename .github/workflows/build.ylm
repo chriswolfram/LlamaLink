@@ -1,0 +1,40 @@
+name: Build
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Download library source
+        uses: actions/checkout@v4
+        with:
+          repository: ggerganov/llama.cpp
+
+      - name: Run cmake
+        run: |
+          cd llama.cpp
+          mkdir build
+          cd build
+          cmake -DLLAMA_STATIC=OFF -DLLAMA_SHARED_LIBS=ON ..
+
+      - name: Build
+        run: |
+          cd llama.cpp/build
+          cmake --build . --config Release
+
+      - name: Install
+        run: |
+          cd llama.cpp/build
+          cmake --install . --prefix install
+      
+      - uses: actions/upload-artifact@v4
+        with:
+          name: linux-library
+          path: libRNA.so
