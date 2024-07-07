@@ -34,7 +34,7 @@ jobs:
           cd llama.cpp/build
           cmake --install . --prefix install
       
-      - uses: actions/upload-artifact@v4
-        with:
-          name: linux-library
-          path: libRNA.so
+      # - uses: actions/upload-artifact@v4
+      #   with:
+      #     name: linux-library
+      #     path: libRNA.so
